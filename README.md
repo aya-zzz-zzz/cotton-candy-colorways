@@ -1,3 +1,8 @@
+## Table of Contents:
+1. Instructions
+2. Radiant Lyrics compatibility instructions
+3. colorway galleries
+
 ## Instructions:
 1.click the base theme file for your OS
 
@@ -27,3 +32,50 @@ using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged
 
 ![image](https://i.imgur.com/PEUNmnR.png)
 ![image](https://i.imgur.com/ybD96Yi.png)
+
+## colorway gallery:
+
+cotton candy 
+![image](https://i.imgur.com/IxTAnM3.jpeg)
+![image](https://i.imgur.com/0G7uW43.png)
+
+horachata
+![image](https://i.imgur.com/Xbs8pGy.jpeg)
+![image](https://i.imgur.com/O35kPsa.png)
+
+## pride collection gallery:
+sour rainbow strips
+![image](https://i.imgur.com/nfaL3qG.png)
+![image](https://i.imgur.com/zDpJsIf.png)
+
+raspberry orange sherbet
+![image](https://i.imgur.com/JOC5BSp.png)
+![image](https://i.imgur.com/DAirtLd.png)
+
+snowcone
+![image](https://i.imgur.com/9lkpa91.png)
+![image](https://i.imgur.com/cLwNcQp.png)
+
+blueberry lemon poppyseed muffin
+![image](https://i.imgur.com/JfdaYKA.jpeg)
+![image](https://i.imgur.com/2snzg4T.jpeg)
+
+purple paradise
+![image](https://i.imgur.com/z2rbwdh.png)
+![image](https://i.imgur.com/QFJ6XBh.png)
+
+ube charcoal icecream
+![image](https://i.imgur.com/2wuoLUl.png)
+![image](https://i.imgur.com/bMcJzfV.jpeg)
+
+violet sky margarita
+![image](https://i.imgur.com/NFA6FXM.png)
+![image](https://i.imgur.com/yQDniPg.png)
+
+fairy floss
+![image](https://i.imgur.com/rL7ZcWY.jpeg)
+![image](https://i.imgur.com/FLgx6YX.png)
+
+
+![image]()
+![image]()
