@@ -23,7 +23,7 @@
 
 ## Radiant Lyrics Compatibility:
 
-using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged! here are the settings I reccommend you use with important setting marked with exclaimation point. to access player bar tint settings click that setting's color box.
+using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged! here are the settings I recommend you use with important setting marked with exclaimation point. to access player bar tint settings click that setting's color box.
 
 ![image](https://i.imgur.com/PEUNmnR.png)
 ![image](https://i.imgur.com/ybD96Yi.png)
