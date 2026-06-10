@@ -1,5 +1,3 @@
-to use this theme, add the base theme's css for your OS and your desired colorway's css to Tidaluna and activate both. 
-<br>
 ## Instructions:
 1.click the base theme file for your OS
 
