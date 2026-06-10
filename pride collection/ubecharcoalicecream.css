@@ -1,0 +1,77 @@
+/* ==========================================.............................................
+    BUILTINTHEME
+-----------------------------------------------======================================== */
+/* ===========================----COLOR VARIABLES----================================== */
+    :root{
+
+        --cover-Vib1:      183, 67, 255 ; /* first vibrant color ("vibrant" color doesn't really have to be very saturated, it's just what the variable is called)*/
+        --cover-DVib1:     50, 50, 50      ; /* darker version of first vibrant color*/
+        --cover-LVib1:     220, 165, 255 ; /* lighter version of first vibrant color*/
+
+        --cover-Vib2:      197, 81, 255 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-DVib2:     50, 50, 50      ; /* darker version of second vibrant color*/
+        --cover-LVib2:     228, 173, 255 ; /* lighter version of second vibrant color*/
+
+        --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this theme was fully covertheme compatible)*/
+        --cover-DMut1:     2, 0, 2      ; /* darker version of muted color*/
+        --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
+
+        --cover-F00T:      180, 180, 180; /*footer color (not now-playing)*/
+        --cover-F00TBAR1:  10, 10, 10   ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
+        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+        --bhdf:    rgb(197, 81, 255);
+
+        --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
+
+        --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 34% , rgb(var(--cover-Vib1), .7) 66%); /*controls sidebar background-color*/
+
+        --sephue: 227deg; /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+
+        --plylstsat: 2.1; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: 1.1; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .3) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib2),.4)  28%);  /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+
+        --feedsat: 1.85; /*controls backdrop-saturation for home feed inner container*/
+        --feedbrt: 1.1; /*controls backdrop-brightness for home feed inner container*/
+        --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .3) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib2),.4)  28%); /*controls border-color for home feed inner container*/
+
+        /*selected track colors*/
+        --tracksel1: rgb(207, 186, 255); /*selected track animated gradient color 1*/
+        --tracksel2: rgb(227, 210, 255); /*selected track animated gradient color 2*/
+        --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
+        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
+        --tracksborder : rgb(216, 188, 255); /*tracklist divider line color; should be fully opaque*/
+        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
+        --v1: rgb(28, 28, 28); /*should vaguely match --cover-Vib1*/
+        --v2: rgb(125, 33, 255); /*should vaguely match --cover-Vib2*/
+        /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+        --but1: rgb(98, 98, 98);
+        --but2: rgb(139, 57, 255);}
+/* ===========================----BACKGROUND TEXURES----=============================== */
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*now playing background*/
+._background_42cea4e{
+     backdrop-filter: blur(4em) brightness(1.46) saturate(1.3);
+background-color: #ffa8ed00!important;
+    background: linear-gradient(var(--rotate),rgba(0, 0, 0, 0.6),rgb(112, 79, 255,.6),rgba(110, 36, 221, 0.6) 100%);
+    background-size: 350% 350%;
+    animation: rotate-gradient 102s cubic-bezier(.29,.44,.67,.56) infinite;}
+#nowPlaying {background-color: #ffe9ff32;
+background-image:  radial-gradient(#06002519 112px, transparent 322px), radial-gradient(#04001c4b 15px, #02001748 612px);
+background-size: 800px 800px;background-position: 0 0,400px 400px;}
+/*main bg (gradients stack from bottom to top)*/
+._mainContainer_6519c30{
+    background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
+    background-image: 
+linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3)),
+radial-gradient(ellipse at top left,rgb(17, 17, 17),rgb(193, 154, 255),rgb(79, 39, 255)100%)
+!important;}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1)); }
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[class="_sidebarWrapper_2f256ce"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(2) brightness(.95); transition: 0ms;}}
