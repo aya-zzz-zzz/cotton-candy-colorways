@@ -72,10 +72,6 @@ violet sky margarita
 ![image](https://i.imgur.com/NFA6FXM.png)
 ![image](https://i.imgur.com/yQDniPg.png)
 
-fairy floss
+fairy floss (i promise this is different from cotton candy i PROMISE)
 ![image](https://i.imgur.com/rL7ZcWY.jpeg)
 ![image](https://i.imgur.com/FLgx6YX.png)
-
-
-![image]()
-![image]()
