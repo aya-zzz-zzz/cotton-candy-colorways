@@ -5,7 +5,7 @@
 
 ## Instructions:
 1.click the base theme file for your OS
-
+(note: macos is still a bit of a wip for now but it's, like, fine)
 ![image](https://i.imgur.com/p3TqpGU.png)
 
 2. click Raw button on top-right
@@ -28,7 +28,7 @@
 
 ## Radiant Lyrics Compatibility:
 
-using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged! here are the settings I recommend you use with important setting marked with exclaimation point. to access player bar tint settings click that setting's color box.
+using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged! here are the settings I recommend you use with important setting marked with an exclaimation point. to access player bar tint settings click that setting's color box.
 
 ![image](https://i.imgur.com/PEUNmnR.png)
 ![image](https://i.imgur.com/ybD96Yi.png)
