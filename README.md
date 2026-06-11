@@ -20,7 +20,7 @@
 
 ![image](https://i.imgur.com/wxke59e.png)
 
-5. repeat steps 2-5 but using the colorway's file instead of the OS base file
+5. repeat previous steps but using the colorway's file instead of the OS base file
 
 ![image](https://i.imgur.com/acqgzy8.png)
 
