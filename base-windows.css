@@ -30,8 +30,9 @@ transform: translateX(.5em)!important;transition: 0!important;}}
    /*ARTIST PAGE*/
    ._background_a548b6d{ border-style:none solid solid solid;border-radius: 0em 0em 1em 1em!important; margin: auto; transform: translateY(-.1em)!important; }
 ._background_a548b6d {max-width: 97%!important;}
+[class="_moduleContainer_c7ad3d9"]{transform: translateY(-22em)!important;}
 ._background_a548b6d{
-    transform: translateY(1em);
+    transform: translateY(2.65em)!important;
     height: 31em!important;}
 [data-test="artist-profile"]{[class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"]
 {transform: translateY(-6.1em);}}
@@ -40,6 +41,7 @@ transform: translateX(.5em)!important;transition: 0!important;}}
    /*HOME FEED*/
 ._feed_412931c{transform: translateY(-5.6em)!important;}
 /*now-playing fullscreen adjustments*/
+div._moduleContainer_c7ad3d9{transform: translatey(-4em)!important;}
 [class="_wrapper_512d5f4"]{
     height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: 0.65em;}
 [class="_container_217add2"]{
