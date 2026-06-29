@@ -30,7 +30,7 @@
 
 using this theme alongside meowarex's radiant-lyrics plugin is highly encouraged! here are the settings I recommend you use with important setting marked with an exclaimation point. to access player bar tint settings click that setting's color box.
 
-![image]([https://i.imgur.com/PEUNmnR.png](https://i.imgur.com/31jHcKl.jpg))
+![image](https://i.imgur.com/31jHcKl.jpg)
 ![image](https://i.imgur.com/ybD96Yi.png)
 
 ## colorway gallery:
