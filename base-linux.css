@@ -59,10 +59,12 @@ transform: translateX(.5em)!important;transition: 0!important;}}
 ._feed_412931c{transform: translateY(-2.2em);}
 [class="_panelContent_912639b"]{
     [class="_wrapper_512d5f4"]{
-         height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: 0em;
+         height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: .5em;
     }
 }
 /*now-playing fullscreen adjustments*/
+.is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b {
+    [class="_wrapper_512d5f4"]{margin-top: 0em;}}
 [class="_wrapper_512d5f4"]{
     height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: 0.65em;}
 [class="_container_217add2"]{
@@ -115,6 +117,7 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 /* =========================================================
   END OF LINUX TYPE SHIT
    ========================================================= */
+
 
 /* ==========================================.............................................
     ANIMATION BANK
@@ -481,6 +484,7 @@ a._searchPill_ff832da:hover{background-color: rgb(var(--cover-Vib1),.3); }
 /* ==========================================.............................................
     SETTINGS / LUNA SETTINGS
 -----------------------------------------------======================================== */
+.css-18r1alp{color: rgba(0, 0, 0, 0.695)}
   /*settings*/
 [data-test="settings-page"]{
         --wave-color-solid-contrast-fill: black;
@@ -3734,52 +3738,11 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%; }}
-/* =========================================================
-   WINDOWS TYPE SHIT
-   ========================================================= */
-   :is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) video {display: none;}
-   /*search results height*/
-[class="_container_79ca9c5"]{ height: calc(100vh - (var(--miniPlayerHeight)*2.4 ))!Important;}
-[class="_playQueueWrapper_cbf5aaa"]{transform: translateY(1.75em);}
-._isFullscreen_75c1ba4 ._playQueueWrapper_cbf5aaa{transform: translateY(-.6em); height: 81%;}
+
 /* =========================================================..............................................................
         LUNALLENA-INSPIRED HEADER-REMOVAL-SYSTEM & HEADER STYLES (ie TOP SEARCH, NAV BUTTONS, & PROFILE BUTTON)
   ---------------------------------------------------------------- ========================================================= */
-:root{--wave-color-solid-base-brighter: #0000!Important;}
-/*HEADER REMOVAL SYSTEM*/
-#main{min-height: 100vh;margin-top: 0px !important;}
-[class*="MuiContainer"]{margin-top: 70px;padding-bottom: calc(var(--miniPlayerHeight) - 70px);}
-/*no scrollbar */
-* {scrollbar-width: none !important;}.os-scrollbar {display: none;}
-[data-test-page-name="album"]{._isCellSelectedDefault_cb7847e._cellDragAndDropDefault_aac9411._cellContainer_19b23ad.cell-album.cell,._isCellSelectedDefault_cb7847e._cellDragAndDropDefault_aac9411._cellContainer_19b23ad.cell-artist.cell{
-transform: translateX(.5em)!important;transition: 0!important;}}
-/*now-playing faux fullscreen*/
-#nowPlaying > div{transform: translateY(-2.2em);}
-#nowPlayingHeader{transform: translateY(.95em);}#nowPlaying > div > div._leftColumn_52725d9._albumMediaQueries_714afcc{transform: translateY(1.01em);}
-   /*ARTIST PAGE*/
-._background_a548b6d {max-width: 97%!important;}
-._background_a548b6d{
-    transform: translateY(2.5em);
-    height: 31em!important;}
-[data-test="artist-profile"]{[class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"]
-{transform: translateY(-4.8em);}._marketText_1lyag_1{color: black!important}}
-[class="_bar_5b9ac59 _smallText_a636ed6"]{ background: none !important;}
-._moduleContainer_c7ad3d9{transform: translateY(-2em)!important;}
-   /*HOME FEED*/
-._feed_412931c{transform: translateY(-1.4em);}
-/*now-playing fullscreen adjustments*/
-[class="_wrapper_512d5f4"]{
-    height: calc(100% - (var(--miniPlayerHeight)*0.51 ))!Important;margin-top: 0.65em;}
-[class="_container_217add2"]{
-[class="_creditsList_7124af4"]{transform: translateY(2em);padding-bottom: 33em;}}
-[data-test="now-playing-similar-tracks"]{transform: translateY(1.1em);}
-/*fullscreen w/ footer*/
-.is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b{
-._panelWrapper_5734a06._panelWrapperActive_404b577 {
-    transition: 300ms;height: calc(100% - (var(--miniPlayerHeight)*1.08 ));margin-top: 6.4em;}
-transform: translateY(2.2em);
-[class="_header_2fcc3e4"] {transform: translateY(-2em);}
-[class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
+
 /* TOPBAR COLOR*/
 #wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(2px)!important;
 background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0))!important; }
@@ -3842,9 +3805,7 @@ div._controls_7a73a1e > button._closeButton_560a9f3._button_8536ec0:hover{
     box-shadow: 0px 0px 1em color-mix(in srgb, rgb(var(--cover-DVib1), .5) 60%, #000000 40%)     ,     inset 0px 0px 1.25em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 99%, #ff000065 1%)  ;
     animation: bounc .2s cubic-bezier(.29,.44,.67,.56) 1, rotate-gradient 4s cubic-bezier(.33,.48,.63,.47) infinite;filter: brightness(1.13) saturate(1.2);transition: 200ms!important;}
 div[class*="_bar_"] button[class*="_button_"] svg:active{filter: brightness(1.3);transform: scale(1) translateY(.1em)!important;transition: 20ms!important;border-radius: .27em!important;}
-/* =========================================================
-  END OF WINDOWS TYPE SHIT
-   ========================================================= */
+
 
 /* ==========================================.............................................
 /* ==========================================.............................................
