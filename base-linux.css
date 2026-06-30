@@ -25,6 +25,7 @@ border-color: color-mix(in srgb, rgba(255, 255, 255, 0.25) 30% , rgb(var(--cover
 /* =========================================================
    LINUX TYPE SHIT
    ========================================================= */
+   #main{transform: translateY(-3.5em);}
    [class="_container_cb5cbe4"]{transform: translateY(.8em);}
     ._header_3fe665f._scrolled_38d655a:before {display: none;}
    /*search results height*/
@@ -48,7 +49,7 @@ transform: translateX(.5em)!important;transition: 0!important;}}
    ._background_a548b6d{ border-style:none solid solid solid;border-radius: 0em 0em 1em 1em!important; margin: auto; transform: translateY(-.1em)!important; }
 ._background_a548b6d {max-width: 98%!important;}
 ._background_a548b6d{
-    transform: translateY(1.1em)!important;
+    transform: translateY(5.2em)!important;
     height: 31em!important;}
     div._moduleContainer_c7ad3d9{transform: translatey(-5.7em)!important;}
 [data-test="artist-profile"]{[class="_dataContainer_108ce86"],[class="_actionContainer_7bd364b"]
