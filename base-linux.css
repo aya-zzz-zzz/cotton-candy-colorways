@@ -36,7 +36,7 @@ border-color: color-mix(in srgb, rgba(255, 255, 255, 0.25) 30% , rgb(var(--cover
   ---------------------------------------------------------------- ========================================================= */
 :root{--wave-color-solid-base-brighter: #0000!Important;}
 /*HEADER REMOVAL SYSTEM*/
-#main{min-height: 100vh;margin-top: 0px !important;}
+#main{min-height: 105vh;margin-top: 0px !important;}
 [class*="MuiContainer"]{margin-top: 40px;padding-bottom: calc(var(--miniPlayerHeight) - 70px);}
 /*no scrollbar */
 * {scrollbar-width: none !important;}.os-scrollbar {display: none;}
