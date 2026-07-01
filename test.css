@@ -123,6 +123,9 @@ border-color: color-mix(in srgb, rgba(255, 255, 255, 0.25) 30% , rgb(var(--cover
   /* =========================================================
    WINDOWS TYPE SHIT
    ========================================================= */
+   /*nav button go awayyyy*/
+[class="_container_bb78f1d"]{transform: translateY(-7em) !important;}
+[class="_container_bb78f1d _navHidden_1fca378"]{filter: opacity(0)}
      ._header_3fe665f._scrolled_38d655a:before {display: none;}
    :is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) video {display: none;}
    /*search results height*/
@@ -289,8 +292,7 @@ div._moduleContainer_c7ad3d9{transform: translatey(-4em)!important;}
       NAV BUTTONS/ TOP SEARCH / PROFILE BUTTON
   ==========================================.............................................
   ==========================================.............................................*/
-  /*nav button go awayyyy*/
-[class="_container_bb78f1d"],[class="_container_bb78f1d _navHidden_1fca378"]{transform: translateY(-7em)!important;}
+
 /*top search close button*/
 div._searchField_b2eb7f7>button svg ,div._searchField_b2eb7f7:focus-within>svg, div._searchField_b2eb7f7:focus-within>button svg{
     color:black;}
