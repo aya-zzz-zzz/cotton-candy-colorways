@@ -10,7 +10,7 @@
 -----------------------------------------------======================================== */
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
-        --cover-Vib1:      163, 152, 144 ;
+        --cover-Vib1:      157, 145, 136 ;
         --cover-DVib1:     41, 36, 32 ;
         --cover-LVib1:     192, 185, 179;
 
@@ -22,7 +22,7 @@
         --cover-DMut1:     74, 66, 58 ;
         --cover-LMut1:     239, 188, 236 ;
 
-        --cover-F00T:      186, 177, 170;
+        --cover-F00T:      206, 196, 189;
         --cover-F00TBAR1:  43, 40, 37;
         --cover-F00TD:     74, 66, 58;
        
@@ -33,7 +33,7 @@
 
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(77, 190, 255);
+        --bhdf:    rgb(157, 145, 136);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
