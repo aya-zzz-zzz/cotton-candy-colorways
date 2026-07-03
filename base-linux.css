@@ -31,11 +31,6 @@ a,._titleText_51cccae,time{color: rgba(0, 0, 0, 0.98);}
 /* =========================================================
    LINUX TYPE SHIT
    ========================================================= */
-/*brings back fullscreen button in radiant lyrics; a little buggy when rl is loading lyrics for a song tidal doesn't have*/
-div._actionButtons_c44ccc7 > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d
-{display:inline !important;}
-
-
    #main{transform: translateY(-.1em);}
    [class="_container_cb5cbe4"]{transform: translateY(.8em);}
     ._header_3fe665f._scrolled_38d655a:before {display: none;}
@@ -69,11 +64,16 @@ transform: translateX(.5em)!important;transition: 0!important;}}
 ._moduleContainer_c7ad3d9{transform: translateY(-4.5em)!important;}
    /*HOME FEED*/
 ._feed_412931c{transform: translateY(-2.2em);}
+
 [class="_panelContent_912639b"]{
-    [class="_wrapper_512d5f4"]{
-         height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: .5em;
-    }
-}
+[class="_wrapper_512d5f4"]{
+         height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: .5em; }}
+
+@media (max-height: 900px){
+[class="_panelContent_912639b"]{
+[class="_wrapper_512d5f4"]{
+    height: calc(100% - (var(--miniPlayerHeight)*0.56 ))!Important;margin-top: .81em; }}}
+
 /*now-playing fullscreen adjustments*/
 .is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b {
     [class="_wrapper_512d5f4"]{margin-top: 0em;}}
@@ -121,7 +121,7 @@ background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 
 ._smallHeader_1c02955{background-color: none!important;}
 [class="_wrapper_af56620"]{--wave-color-solid-base-fill: #ff000000;}
 /*sidebar*/
-[class*="_sidebarWrapper_"] {top: 1em; height: calc(100% - (var(--miniPlayerHeight)*1.65))!important;}
+[class*="_sidebarWrapper_"] {top: 1em; height: calc(100% - (var(--miniPlayerHeight)*1.44))!important;}
 [class*="_sidebarWrapper_"]::after {display: none;background-color: rgba(0, 0, 0, 0);}
 [class*="_sidebarWrapper_"] ,[aria-label="Navigation sidebar"]{ border-radius: 0 19px 19px 0;border-left: none;
 transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
