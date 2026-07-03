@@ -31,6 +31,11 @@ a,._titleText_51cccae,time{color: rgba(0, 0, 0, 0.98);}
 /* =========================================================
    LINUX TYPE SHIT
    ========================================================= */
+/*brings back fullscreen button in radiant lyrics; a little buggy when rl is loading lyrics for a song tidal doesn't have*/
+div._actionButtons_c44ccc7 > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d
+{display:inline !important;}
+
+
    #main{transform: translateY(-.1em);}
    [class="_container_cb5cbe4"]{transform: translateY(.8em);}
     ._header_3fe665f._scrolled_38d655a:before {display: none;}
