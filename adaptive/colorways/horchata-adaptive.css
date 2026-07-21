@@ -1,0 +1,101 @@
+
+  @media (prefers-color-scheme: light){
+/* ==========================================.............................................
+    BUILTINTHEME
+-----------------------------------------------======================================== */
+/* ===========================----COLOR VARIABLES----================================== */
+    :root{
+        --cover-Vib1:      157, 145, 136 ;
+        --cover-DVib1:     41, 36, 32 ;
+        --cover-LVib1:     192, 185, 179;
+
+        --cover-Vib2:      207, 188, 166  ;
+        --cover-DVib2:     41, 36, 32  ;
+        --cover-LVib2:     218, 207, 95 ;
+
+        --cover-Mut1:      120, 120, 120 ;
+        --cover-DMut1:     74, 66, 58 ;
+        --cover-LMut1:     239, 188, 236 ;
+
+        --cover-F00T:      206, 196, 189;
+        --cover-F00TBAR1:  43, 40, 37;
+        --cover-F00TD:     74, 66, 58;
+       
+        --sephue: 3deg; 
+
+        --plylstsat: 1;
+        --plylstbrt: 1.06;
+
+
+        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+        --bhdf:    rgb(157, 145, 136);
+
+        --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
+
+        --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 34% , rgb(var(--cover-Vib1), 1) 66%); /*controls sidebar background-color*/
+
+
+        --plylstbrdr: rgba(221, 217, 199, 0.741); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+
+        --feedsat: 1.85; /*controls backdrop-saturation for home feed inner container*/
+        --feedbrt: 1.1; /*controls backdrop-brightness for home feed inner container*/
+        --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib1), .9) 60% , rgba(255, 255, 255, 0.9)  40%)72% , rgb(var(--cover-LVib1),.9)  28%); /*controls border-color for home feed inner container*/
+
+        /*selected track colors*/
+        --tracksel1: color-mix(in srgb, rgb(var(--cover-Vib2),.35) 90% , rgb(var(--cover-LVib2),.3) 10%);
+        --tracksel2: color-mix(in srgb, rgb(var(--cover-Vib1),.35) 60% , rgb(var(--cover-LVib2),.25) 40%);
+        --trackselshad: rgb(var(--cover-DVib1),.09);
+        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%);
+        --tracksborder : rgb(212, 204, 192);
+
+        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
+         /*home page top tab thingies*/
+        --v1: rgb(179, 168, 147);
+        --v2: rgb(177, 175, 157);
+        /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+           /*MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+        --but1: rgb(164, 147, 101);
+        --but2: rgb(171, 145, 106);}
+/* ==========================================.............................................
+    BACKGROUND TEXURESSSS
+  -----------------------------------------------======================================== */
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*now playing background*/
+._background_42cea4e{
+    background-color: color-mix(in srgb, rgb(var(--cover-LightVibrant),1) 10% ,rgb(255, 255, 255) 90%) ;
+    background-image: 
+linear-gradient(180deg, rgba(204, 204, 204, 0.122), rgba(179, 179, 179, 0.15)),
+radial-gradient(ellipse at center,transparent,rgb(var(--cover-DVib1),.15) 333%),
+radial-gradient(ellipse at center left,rgb(var(--cover-Vib1),.25),transparent 22%),
+radial-gradient(ellipse at top left, rgb(var(--cover-Vib2),0.6) ,  rgb(var(--cover-Vib1),0.275)    ,rgba(0, 128, 0, 0) 90%),
+radial-gradient(ellipse at bottom left,rgb(var(--cover-Vib2),1),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at center right,color-mix(in srgb, rgb(var(--cover-Vib1),1) 80% ,rgb(255, 255, 255) 20%) ,rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--cover-LVib1),0.89),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), .7) 40%, rgb(255, 255, 255) 60%),transparent 110%),
+linear-gradient(rgb(var(--cover-DVib1)) , rgb(var(--cover-DVib1)))!important;}
+._mainContainer_6519c30{
+    background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
+    background-image: 
+linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--cover-Vib1),0.25) 95%, rgb(var(--cover-DVib1),0.25) 5%),rgb(var(--cover-DMut1),0.02)70%),
+radial-gradient(circle at bottom right,rgb(var(--cover-Vib1),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--cover-Vib1),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--cover-LVib1),0.5), rgb(var(--cover-Vib1),0.6),rgba(0, 128, 0, 0) 90%),
+radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--cover-Vib1),0.35) 50%, rgb(var(--cover-DVib1),0.1) 50%),rgb(var(--cover-LMut1),0.25) 70%),
+radial-gradient(ellipse at center right,rgb(var(--cover-Vib1),0.5),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--cover-Vib1),0.3),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
+!important;}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1)); }
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[class="_sidebarWrapper_2f256ce"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
+
+/* ==========================================.............................................
+   END OF BUILTINTHEME
+-----------------------------------------------======================================== */
+}
