@@ -5307,6 +5307,7 @@ background: none!important;}
 [class*="_stickyHeader"]{backdrop-filter: none!important;}
 .rl-wbw-line.rl-wbw-line-active{padding-left: .2em!important;}
 /*radiantlyrics*/
+[data-test=now-playing-lyrics] div.rl-wbw-active:not(.rl-wbw-word){ margin-left: 0px!important;}
 /*inactive lyrics (all)*/
 span.rl-wbw-word,[data-test=now-playing-lyrics] span[data-test=lyrics-line]
 {color: color-mix(in srgb, rgb(var(--cover-DVib1), .475) 60% , #00000070 40%)   !important;}
