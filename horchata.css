@@ -92,3 +92,7 @@ background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
 [id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.4) brightness(.95); transition: 0ms;}}
+
+/* ==========================================.............................................
+   END OF BUILTINTHEME
+-----------------------------------------------======================================== */
