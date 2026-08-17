@@ -2022,10 +2022,7 @@ background-color: color-mix(in srgb, rgb(var(--cover-Vib1), .9) 55%, rgba(255, 2
 
 /*this has to stay at the bottom for radiant lyrics compat <3*/ 
 [class*="_sidebar_"] {background-color: transparent !important;}
-[class="has-footer-player is-desktop-app is-now-playing"]{
-[class*="_nowPlayingContainer"]{
-    background: #0000!important;
-    background-color: #0000!important;}}
+
 [data-test=new-now-playing]>[class*="_content_"]{z-index: 0!important;}
 button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d{
     display: block!important;}
