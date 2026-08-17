@@ -34,8 +34,8 @@
         --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib1), .9) 60% , rgba(255, 255, 255, 0.9)  40%)72% , rgb(var(--cover-LVib1),.9)  28%); /*controls border-color for home feed inner container*/
 
         /*selected track colors*/
-        --tracksel1: color-mix(in srgb, rgb(var(--cover-Vib2),.35) 90% , rgb(var(--cover-LVib2),.3) 10%); /*selected track animated gradient color 1*/
-        --tracksel2: color-mix(in srgb, rgb(var(--cover-Vib1),.35) 60% , rgb(var(--cover-LVib2),.25) 40%); /*selected track animated gradient color 2*/
+        --tracksel1: rgb(165, 190, 255); /*selected track animated gradient color 1*/
+        --tracksel2: rgb(224, 147, 255); /*selected track animated gradient color 2*/
         --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
         --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
         --tracksborder : rgb(255, 193, 246); /*tracklist divider line color; should be fully opaque*/
@@ -79,4 +79,4 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1.4) brightness(.95); transition: 0ms;}}
