@@ -8,6 +8,49 @@
 
 
 /* ==========================================.............................................
+    BACKGROUND TEXURESSSS
+  -----------------------------------------------======================================== */
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*now playing background*/
+._background_42cea4e{
+    background-color: color-mix(in srgb, rgb(var(--cover-LightVibrant),1) 10% ,rgb(255, 255, 255) 90%) ;
+    background-image: 
+linear-gradient(180deg, rgba(204, 204, 204, 0.122), rgba(179, 179, 179, 0.15)),
+radial-gradient(ellipse at center,transparent,rgb(var(--cover-DVib1),.15) 333%),
+radial-gradient(ellipse at center left,rgb(var(--cover-Vib1),.25),transparent 22%),
+radial-gradient(ellipse at top left, rgb(var(--cover-Vib2),0.6) ,  rgb(var(--cover-Vib1),0.275)    ,rgba(0, 128, 0, 0) 90%),
+radial-gradient(ellipse at bottom left,rgb(var(--cover-Vib2),1),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at center right,color-mix(in srgb, rgb(var(--cover-Vib1),1) 80% ,rgb(255, 255, 255) 20%) ,rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--cover-LVib1),0.89),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), .7) 40%, rgb(255, 255, 255) 60%),transparent 110%),
+linear-gradient(rgb(var(--cover-DVib1)) , rgb(var(--cover-DVib1)))!important;}
+._mainContainer_6519c30{
+    background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
+    background-image: 
+linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--cover-Vib1),0.25) 95%, rgb(var(--cover-DVib1),0.25) 5%),rgb(var(--cover-DMut1),0.02)70%),
+radial-gradient(circle at bottom right,rgb(var(--cover-Vib1),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--cover-Vib1),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--cover-LVib1),0.5), rgb(var(--cover-Vib1),0.6),rgba(0, 128, 0, 0) 90%),
+radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--cover-Vib1),0.35) 50%, rgb(var(--cover-DVib1),0.1) 50%),rgb(var(--cover-LMut1),0.25) 70%),
+radial-gradient(ellipse at center right,rgb(var(--cover-Vib1),0.5),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--cover-Vib1),0.3),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
+!important;}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1)); }
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.4) brightness(.95); transition: 0ms;}}
+
+/* ==========================================.............................................
+   END OF BUILTINTHEME
+-----------------------------------------------======================================== */
+
+/* ==========================================.............................................
     ANIMATION BANK
    -----------------------------------------------======================================== */
 @property --rotate {syntax: '<angle>';initial-value: 0deg;inherits: false;}
@@ -35,30 +78,38 @@
 /* =========================================================
    WINDOWS TYPE SHIT
    ========================================================= */
-    /* =========================================================
+   :is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
+    box-shadow: 0px 4px 1.5em color-mix(in srgb, rgb(var(--cover-Vib1),.3) 90%, rgba(0, 0, 0, 0.3) 10%);}
+/* =========================================================
    footer patch
    ========================================================= */
 ._header_3fe665f:before{display: none;}
+
 [class="has-footer-player is-desktop-app is-now-playing"],[class="has-footer-player is-desktop-app"],[class="has-footer-player is-desktop-app is-fullscreen is-now-playing"]{
-._player_8c80ae6.nowPlayingVisible{ width: 98.1vw !important;border-width: 1.5px!important;
-border-color: color-mix(in srgb, rgba(255, 255, 255, 0.25) 30% , rgb(var(--cover-LVib1), .2) 70%)!important;}
+._player_8c80ae6.nowPlayingVisible{ max-width: 98vw!important;min-width: 98vw!important;;border-width:0px!important;
+margin-left: auto!important; margin-right: auto!important;
+
+border-color: color-mix(in srgb, rgba(255, 255, 255, 0.25) 30% , rgb(var(--F00TNP), .5) 70%)!important;}
 
 ._player_8c80ae6:before,._player_8c80ae6.nowPlayingVisible ._veil_9a0b2e0{display: none;}
 
 ._player_8c80ae6:after{ background: #0000; backdrop-filter: none; box-shadow: none;}
 
-._player_8c80ae6{width: 98vw!important; margin-bottom: 0px!important; margin-left: auto!important; margin-right: auto!important; border-color: color-mix(in srgb, rgba(255, 255, 255, 0.3) 50% , rgb(var(--cover-F00T), .4) 50%)!important; border-width: 1.5px!important;}
+._player_8c80ae6{max-width: 98vw!important;min-width: 98vw!important; width: 200%;
+left: 0px!important; right: 0px!important;
+margin-bottom: 0px!important; margin-left: auto!important; margin-right: auto!important; 
+border-color: color-mix(in srgb, rgba(255, 255, 255, 0.1) 50% , rgb(var(--cover-F00T), .4) 50%)!important; 
+border-width: 0px!important;}
 
-[data-test=footer-player]{bottom: 12px!important; border-radius: 1em!important;}}
+[data-test=footer-player]{bottom: 9px!important; border-radius: 1em!important;}}
 
 ._solidColor_d318bad,._wrapper_27ba76d._solidColor_a4abb93 ._dataContainer_5bb6028:before,
 ._solidColor_052313f{background: #0000!Important;}
 
-   :is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) video {display: none;}
+:is(._coverArtContainer_2eafdf9 ._coverArt_79d862c) video {display: none;}
    /*search results height*/
 [class="_container_79ca9c5"]{ height: calc(100vh - (var(--miniPlayerHeight)*2.4 ))!Important;}
 [class="_playQueueWrapper_cbf5aaa"]{transform: translateY(1.75em);}
-._isFullscreen_75c1ba4 ._playQueueWrapper_cbf5aaa{transform: translateY(-.6em); height: 81%;}
 /* =========================================================..............................................................
         LUNALLENA-INSPIRED HEADER-REMOVAL-SYSTEM & HEADER STYLES (ie TOP SEARCH, NAV BUTTONS, & PROFILE BUTTON)
   ---------------------------------------------------------------- ========================================================= */
@@ -86,21 +137,23 @@ transform: translateX(.5em)!important;transition: 0!important;}}
 ._feed_412931c{transform: translateY(-3.6em);}
 /*now-playing fullscreen adjustments*/
 [class="_wrapper_512d5f4"]{
-    height: calc(100% - (var(--miniPlayerHeight)*0.51 ))!Important;margin-top: 0.65em;}
+    height: calc(100% - (var(--miniPlayerHeight)*0.6 ))!Important;margin-top: 0.65em;}
 [class="_container_217add2"]{
 [class="_creditsList_7124af4"]{transform: translateY(2em);padding-bottom: 33em;}}
 [data-test="now-playing-similar-tracks"]{transform: translateY(1.1em);}
-/*fullscreen w/ footer*/
+/*fullscreen no footer*/
 .is-fullscreen ._fullscreen_236d61b, .is-compact-mode ._fullscreen_236d61b{
 ._panelWrapper_5734a06._panelWrapperActive_404b577 {
-    transition: 300ms;height: calc(100% - (var(--miniPlayerHeight)*1.08 ));margin-top: 6.4em;}
+    transition: 300ms;height: calc(100% - (var(--miniPlayerHeight)*1.125 ));margin-top: 5.5em;}
 transform: translateY(2.2em);
 [class="_header_2fcc3e4"] {transform: translateY(-2em);}
 [class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
 /* TOPBAR COLOR*/
-#wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(2px)!important;
-background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0))!important; }
-
+#wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(1.5px)!important;
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0))!important; }
+/*fullscreen with footer*/
+[class="_fullscreen_236d61b"]{._panelWrapper_5734a06._panelWrapperActive_404b577{
+height: calc(100% - (var(--miniPlayerHeight)*1.51 ))!important; transition: 310ms!important; transition-delay: -95ms!important;}}
 /* MAIN CONTENT SHIFT (HEADER REMOVAL CONT)*/
 .mainContent
 {padding-bottom: var(--miniPlayerHeight);margin-top: 2em;}/*4em margin-top for linux/browser*/
@@ -142,7 +195,7 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 div[class*="_title_"] {display: none !important;}}
 div[class*="_bar_"] button[class*="_button_"]{
     color: color-mix(in srgb, rgb(var(--cover-DVib1), 1) 80%, #000000 20%) ;
-    backdrop-filter: blur(7px) ;transition: 0ms;padding: .1em!important;margin-right: 1em;border-radius: .6em;width: 34px;height: 31px;transform: scale(.7) translateX(1em) translateY(.1em);}
+    transition: 0ms;padding: .1em!important;margin-right: 1em;border-radius: .6em;width: 34px;height: 31px;transform: scale(.7) translateX(1em) translateY(.1em);}
 div[class*="_bar_"] button[class*="_button_"] svg{transform: scale(1.3);}
 div[class*="_bar_"] button[class*="_button_"]:hover{
     color: rgb(0, 0, 0)!important;
@@ -520,6 +573,7 @@ button._customButton_e043d7d:hover{background-color: var(--v1);}}
 div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-LVib1));}
 .licenseFrame--C_hup {background: #dbdbff;}
 /*Luna settings*/
+
 /*text*/
 A .css-yc8597, .css-pfqxe1, .css-axw7ok, .css-1id1h8n, .css-yc8597, .css-pfqxe1, .css-axw7ok, .css-16hze37{
     color: rgba(0, 0, 0, 0.845)!important;}
@@ -536,6 +590,7 @@ A .css-yc8597, .css-pfqxe1, .css-axw7ok, .css-1id1h8n, .css-yc8597, .css-pfqxe1,
 div > div > span > span.MuiButtonBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.PrivateSwitchBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.css-1y0ghtc > div{
     background-color: hsla(0, 0%, 0%, 0.901)!important;}
 /*buttons*/
+.css-18r1alp{color: rgba(0, 0, 0, 0.5)}
 .css-8wmp9n{background-color: rgba(255, 255, 255, 0.5) !Important;}
 .css-8wmp9n:hover{background-color: rgb(var(--cover-Vib1),.8)!Important;}
 /*active plugin bg*/
@@ -744,6 +799,14 @@ time{color: var(--vv);transition:710ms;}
 ._button_c372e89 svg {fill: var(--vv) !important; transition: 700ms;;}}
 [class="_tableRowSelectGroupEnd_b4631c2 _tableRowSelectGroupStart_cf1af82 _tableRowSelected_fb04c2a _tableRow_299a426"],[class="_tableRowSelectGroupEnd_b4631c2 _tableRowSelectGroupStart_cf1af82 _tableRowSelected_fb04c2a _tableRow_299a426 _tableRowIsPlaying_a59b9fa"]{
 button._button_c25ce4d._addToPlaylistButton_066d0f8 > svg > use{color: var(--vv) !Important;transition: 850ms !Important;}}
+/*recommended songs*/
+[class="_container_d2dc7e6"]{
+._title_abc25e8{color: rgba(0, 0, 0, 0.88)}
+span,a,time{color: black}
+._icon_77f3f89{fill: black}
+}
+
+
 
 /* ==========================================.............................................
      MAIN BUTTONS ( PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)
@@ -1182,6 +1245,26 @@ margin-bottom: -140px!important;}
        FOOTER
    -----------------------------------------------======================================== 
    -----------------------------------------------======================================== */
+
+/*volume slider thumb*/
+input[class*="_nativeRange"]::-webkit-slider-thumb {
+    -webkit-appearance: none;appearance: none;
+    width: 5px;
+    border-radius: 2px;box-shadow: none;
+    background-color: rgb(var(--cover-DVib1),1);}   
+/*currently-playing footer art hover (takes from covertheme if enabled)*/
+
+.css-1tk08rl, .css-1tk08rl > *{transition: none;}
+:root{
+    --cover-DarkVibrant:  var(--cover-DVib1) ;
+    --cover-LightVibrant: var(--cover-LVib1);}
+._artworkContainer_3cdbf46:hover{
+    outline-style: solid; border-radius: 4px; outline-width: 2px;
+    outline-color: rgb(var(--cover-LightVibrant),1);}
+:is(._artworkContainer_3cdbf46:hover,._artworkContainer_3cdbf46:focus-visible) ._artwork_633cf14{filter: brightness(.25) saturate(1.1); }
+._expandIcon_c0733da{color: color-mix(in srgb, rgb(var(--cover-LightVibrant),1) 70%, white 30%);}
+._shuffleButton_545c75a, ._repeatButton_729613e{border-style: solid;border-color: #ffffff00; border-width: 0px;} 
+._shuffleButton_545c75a[aria-checked=true] svg{transform: translateX(.0625em) scale(1.125)!important;}
 /*bottom-bar regular bg */
 :root{--bbtext:  color-mix(in srgb, rgb(var(--cover-DVib1), 1) 66% , #000 34%);}
 ._player_8c80ae6{
@@ -1237,7 +1320,7 @@ background-image: radial-gradient(ellipse at center ,  rgb(var(--cover-F00T), .3
     filter: drop-shadow(0px 0px .31em rgb(var(--cover-DVib1), .43) );}
 /*shufflerepeat active button scaling & hover effect*/
 [aria-checked=true]:is(._shuffleButton_545c75a,._repeatButton_729613e){
-       border-style: solid; border-width: 1.5px;
+    border-style: solid; border-width: 1.5px;
     border-color: color-mix(in srgb, rgb(var(--cover-LVib1),1) 50% , rgb(var(--cover-Vib1), 1)50%);
 filter:  brightness(1.1) saturate(1);
     background-color: rgba(119, 119, 119, 0);
@@ -1266,8 +1349,6 @@ filter:  brightness(1.1) saturate(1);
 ._icon_77f3f89 {fill: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 0% ,rgb(0, 0, 0)  100%) !important;transition: 250ms; transition-delay: -30ms;}
 filter: drop-shadow(0px 0px .4em rgb(var(--cover-DVib1), .4) ) brightness(1.1);transition: 400ms;}
 /*left side text & buttons*/
-/*text*/
-._titleArtistStack_f04ea70{transform: translateY(-.03em) scale(1.01);}
 /*title text*/
 [class="_trackContent_7b758a9"]{
 span{color: var(--bbtext); text-shadow: 0px 0px .1em rgba(255, 255, 255, 0.114); }
@@ -1490,7 +1571,7 @@ box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
 /*lyrics button added-icon color*/
 .sticky-lyrics-trigger{color: rgba(255, 255, 255, 0.901)!important;}
 /*active*/
-[data-test=toggle-lyrics]{
+#nowPlaying > header > div._buttons_6ec911e > div._contentButtons_6b6c8ea > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428{
       svg > path:nth-child(1){fill: rgb(0, 0, 0)!important;transition: 200ms!important;}
   svg > path:nth-child(2){fill: rgba(0, 0, 0, 0.85)!important;transition: 200ms!important;}
    svg > path:nth-child(3){fill: rgba(0, 0, 0, 0.9)!important;transition: 200ms!important;}}
@@ -1500,7 +1581,7 @@ box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
     svg > path:nth-child(2){fill: rgb(19, 0, 9)!important;transition: 100ms!important;}
     svg > path:nth-child(3){fill: rgb(0, 9, 20)!important;transition: 100ms!important;}}
 /*inactive hover*/
-[class="_marketButton_1l1bl_1 _secondary_1l1bl_7 _small_1l1bl_3"]:hover{
+._marketButton_1l1bl_1._small_1l1bl_3._tertiary_1l1bl_8:hover{
  svg > path:nth-child(1){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(255, 221, 0)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(92, 187, 255)!important;transition: 210ms!important;transition-delay: 65ms;}}
@@ -1516,6 +1597,11 @@ background: none!important;}
 [class*="_stickyHeader"]{backdrop-filter: none!important;}
 .rl-wbw-line.rl-wbw-line-active{padding-left: .2em!important;}
 /*radiantlyrics*/
+[class="_wrapper_512d5f4"]{
+.rl-wbw-line:not(.rl-wbw-line-active) .rl-wbw-main .rl-wbw-word.rl-wbw-word-hover, .rl-wbw-line:not(.rl-wbw-line-active) .rl-wbw-main .rl-wbw-word:hover, .rl-wbw-line:not(.rl-wbw-line-active)>.rl-wbw-word.rl-wbw-word-hover, .rl-wbw-line:not(.rl-wbw-line-active)>.rl-wbw-word:hover,[data-test=now-playing-lyrics] span[data-test=lyrics-line][class*="_current_"]{
+    color: color-mix(in srgb, rgb(var(--cover-DVib1), 1) 60% , #00000070 40%) !important;
+    text-shadow: none!important;
+}}
 [data-test=now-playing-lyrics] div.rl-wbw-active:not(.rl-wbw-word){ margin-left: 0px!important;}
 /*inactive lyrics (all)*/
 span.rl-wbw-word,[data-test=now-playing-lyrics] span[data-test=lyrics-line]
@@ -1563,6 +1649,8 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
 ._panelWrapper_5734a06{
     transform: translateY(-1em)!important;
     height: calc(100% - (var(--miniPlayerHeight) * 1.525)) ;}
+._panelWrapper_5734a06 {
+     --panel-bottom-margin: 6em;}
 ._scrollArea_200f837 {
     height: calc(115% - (var(--miniPlayerHeight) * 1.59)) !important;
     transform: translateY(0em)!important;}
@@ -1584,7 +1672,11 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     100% {background-position: 0% 50%;}}
 /*secondary (inactive) buttons*/
 [class="_header_2fcc3e4"]{ transform: translateY(-.15em);
-._secondary_1l1bl_7{
+
+._toggleButton_934359e{
+    transform: scale(1.1);
+            margin-left: .15em !important;
+        margin-right: 1em !important;
     height: 98.5%;margin: auto;
     border-style: solid;border-width: 2px;
     background-color: color-mix(in srgb, rgb(var(--cover-Vib1), .2) 10% , rgba(0, 0, 0, 0.12) 90%)    !important;
@@ -1596,7 +1688,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     border-color: rgb(var(--cover-DVib1), .1) ;
     backdrop-filter: brightness(1.0) saturate(1.1);}
 ._primary_1l1bl_6:active{border-style: solid;border-width: 2px;}
-._secondary_1l1bl_7:hover,._secondary_1l1bl_7:active{
+._toggleButton_934359e:hover,._toggleButton_934359e:active{
     color: rgb(var(--cover-LVib1));
     text-shadow: 0px 0px 5px rgb(var(--cover-LVib1), .7);
     background: linear-gradient(170deg,
@@ -1609,7 +1701,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .5) 50% , rgba(0, 0, 0, .5) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 75% , rgba(0, 0, 0, 0.288) 25%);
     border-color: color-mix(in srgb, rgb(var(--cover-DMut1), 1) 50% , rgba(0, 0, 0, 1) 50%) ;}
 /*primary (active) buttons*/
-._primary_1l1bl_6{
+button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428{
     border-style: solid;border-width: 2px;
     color: color-mix(in srgb, rgb(var(--cover-DVib1), 1) 20% , rgb(0, 0, 0) 80%)  !important;
     text-shadow: 0px 0px 6.66px rgb(var(--cover-LVib1), .3);
@@ -1638,17 +1730,47 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
         rgb(var(--cover-Vib1), .7) , rgb(var(--cover-Vib1), .8), color-mix(in srgb, rgb(var(--cover-Vib1), .9) 85% , rgb(var(--cover-LVib1), .9) 15%) , color-mix(in srgb, rgb(var(--cover-Vib1), 1) 70% , rgb(var(--cover-LVib1), 1) 30%) );
         background-color: #ffffff!Important;background-size: 340% 340%;animation: buttongradient2 620s cubic-bezier(.24, .48, .67, .56)!IMPORTANT;animation-iteration-count: 1;transition: 300ms;}}
 /*artist card*/
-._card_81a423e{
-    background-image: linear-gradient(var(--rotate), rgb(var(--cover-Vib1),.8), rgb(var(--cover-LVib1), .7)); background-color: #fff0;animation: rotate-gradient 18s cubic-bezier(.33,.48,.63,.47) infinite;backdrop-filter: blur(2em) brightness(1.6);
+/*artist card*/
+._card_2b91b88{
+._marketText_1lyag_1._text10_1lyag_287{color: rgba(0, 0, 0, 0.8)}
+._marketButton_1l1bl_1._small_1l1bl_3._primary_1l1bl_6{
+  background-color: #0000;
+  border-style: solid;
+  border-color: rgb(var(--cover-LVib1)) !important;
+    background-image: linear-gradient(var(--rotate), rgb(var(--cover-Vib1),.95), rgb(var(--cover-LVib1), .9));animation: rotate-gradient 18s cubic-bezier(.33,.48,.63,.47) infinite;}
+   
+._marketButton_1l1bl_1._small_1l1bl_3:hover{
+    span{color: rgb(var(--cover-LVib1))!important;}
+     color: rgb(var(--cover-LVib1));
+    text-shadow: 0px 0px 5px rgb(var(--cover-LVib1), .7);
+    background: linear-gradient(170deg,
+        rgb(var(--cover-DMut1), .18),rgb(var(--cover-DMut1), .19),
+        rgb(var(--cover-DMut1), .21),rgb(var(--cover-DMut1), .22),
+        color-mix(in srgb, rgb(var(--cover-DMut1), .7) 50% , rgba(0, 0, 0, 0.7) 50%)  , color-mix(in srgb, rgb(var(--cover-DMut1), .72) 50% , rgba(0, 0, 0, 0.72) 50%) ,
+        color-mix(in srgb, rgb(var(--cover-DMut1), .75) 50% , rgba(0, 0, 0, 0.75) 50%)  , color-mix(in srgb, rgb(var(--cover-DMut1), .78) 50% , rgba(0, 0, 0, 0.78) 50%) ,
+        color-mix(in srgb, rgb(var(--cover-DMut1), .8) 50% , rgba(0, 0, 0, 0.8) 50%) );
+    background-size: 340% 340%;animation: buttongradient2 620s cubic-bezier(.24,.48,.67,.56) ;transition: 00ms;
+    box-shadow: inset 0px 0px 1em  color-mix(in srgb, rgb(var(--cover-DMut1), .5) 50% , rgba(0, 0, 0, .5) 50%) ,  0px 0px .85em color-mix(in srgb, rgb(var(--cover-LVib1), 1) 75% , rgba(0, 0, 0, 0.288) 25%);
+    border-color: color-mix(in srgb, rgb(var(--cover-DMut1), 1) 50% , rgba(0, 0, 0, 1) 50%) !important;}
+
+    span{color: rgb(var(--cover-DVib1), .9)!important}
+    ._marketButton_1l1bl_1._small_1l1bl_3._tertiary_1l1bl_8{
+        background-color: rgba(255, 255, 255, 0.2);
+        border-style: solid;
+        border-color: rgb(var(--cover-LVib1),.5)}
+    background-image: linear-gradient(var(--rotate), rgb(var(--cover-Vib1),.95), rgb(var(--cover-LVib1), .9)); background-color: #fff0;animation: rotate-gradient 18s cubic-bezier(.33,.48,.63,.47) infinite;backdrop-filter: blur(2em) brightness(1.6);
     box-shadow: inset 0px 0px 6em  rgb(var(--cover-LVib1), .7), 0px 0px 1.5em rgb(var(--cover-DMut1), .45);
 ._marketText_1lyag_1._textWhite_1lyag_319{color: rgba(8, 0, 26, 0.906);font-weight: 600;}
 ._marketText_1lyag_1._text20_1lyag_291{color: rgba(8, 0, 26, 0.656); font-weight: 500;}
-._medium_zmuq1_4{filter: brightness(.1);}}
+._medium_zmuq1_4{filter: brightness(.1);}
+
+}
+
 /*np art*/
 ._artwork_b010eae{border-radius: 1em;}
 ._artworkTilt_1c6d5cc {border: none;}
-._glare_fdbaeab{filter: sepia(1) hue-rotate(200deg) saturate(399) brightness(1.7);}
-._glare_fdbaeab:hover{filter: saturate(2299) brightness(1.7)!important;transition: 10000ms}
+._glare_fdbaeab{filter: sepia(1) hue-rotate(var(--sephue)) saturate(5) brightness(1.7);}
+._glare_fdbaeab:hover{filter: saturate(15) brightness(1.7)!important;transition: 10000ms}
 ._artworkImage_5bde5a4{transition: 600ms;}
 ._artworkImage_5bde5a4:hover{
 filter: brightness(1.11) contrast(.84) saturate(1.14);
@@ -1666,10 +1788,11 @@ backdrop-filter: blur(2em) brightness(1.02) saturate(1.03);
     border-style: solid;border-width: 2px;border-radius: 1em;padding-left: .6em;height: 98%;transform: translateY(2%);}
 /*lyrics provider*/
 /*np lyrics*/
+._fadeEdges_3ab010e [data-overlayscrollbars-viewport]{mask-image: none;}
 [data-overlayscrollbars-initialize]:not([data-overlayscrollbars-viewport]){height: 100%!important;}
 ._hasCues_15d8b83 span{
     line-height: 1.425;
-    font-size: larger;
+    font-size: 36px;
     opacity: 1!important;transition: 400ms;transform: scale(.99) translatex(-.1em);
     color: color-mix(in srgb, rgb(var(--cover-DVib1), .475) 60% , #00000070 40%)   !important; } 
 ._hasCues_15d8b83 span:hover{color: color-mix(in srgb, rgb(var(--cover-DVib1), .7) 62.5% ,rgba(255, 255, 255, .7) 37.5%)!important; transition: 200ms;}
@@ -1719,7 +1842,11 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
        HOME/FEED/CARDS
    -----------------------------------------------======================================== 
    -----------------------------------------------======================================== */
-
+/*home page very top tab thingies*/
+._marketPagingTab_wl3o7_1{color: rgb(var(--cover-DVib1),.6)}
+._selected_wl3o7_125{color: rgb(var(--cover-DVib1))}
+._marketPagingTab_wl3o7_1:hover{color: rgb(var(--cover-DVib1))}
+._button_wl3o7_17:after{background: rgb(var(--cover-DVib1));}
 /*home page top tab thingies*/
 [class="_container_f470b47"]{
 ._marketText_1lyag_1._medium10_1lyag_210,._marketText_1lyag_1._medium10_1lyag_210 {
@@ -1930,9 +2057,33 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
 :root{ /*tidal internal colors*/
         --wave-color-solid-contrast-darker:  color-mix(in srgb, rgb(var(--cover-DVib1),.6) 50% , black 50%)!important;/*playlist description*/
         --wave-color-solid-accent-fill: black;}
+
+
+/*this has to stay at the bottom for reasons unbeknownst to me <3*/ 
+/*sidebar playlist bg hover remover*/ 
+._contentItem_684cbbe:hover,._contentItem_684cbbe._selected_ae83ba5{background-color: #0000;}
+/*sidebar playlist/folder selected effects*/ 
+._contentItem_684cbbe._selected_ae83ba5{
+._thumbnail_f82abfa{border-style: solid;border-color: rgb(var(--cover-DVib1));}
+._thumbnail_f82abfa img{filter: none;}}
+/*sidebar playlist/folder hover effects*/ 
+._contentItem_684cbbe:hover{
+._thumbnail_f82abfa{outline: solid;outline-color: rgb(var(--cover-DVib1));outline-width: 2px;
+background-color: color-mix(in srgb, rgb(var(--cover-Vib1), .9) 55%, rgba(255, 255, 255, 0.3) 45%)}}
+/*sidebar currently playling playlist effect*/ 
+._overlay_aab3645{background-color: rgb(var(--cover-LVib1),.67);
+._icon_77f3f89{fill: color-mix(in srgb, rgb(var(--cover-DVib1)) 50%, black 50%)}}
+
+
+
 /*this has to stay at the bottom for radiant lyrics compat <3*/ 
 [class*="_sidebar_"] {background-color: transparent !important;}
-._marketIcon_1664p_1._singleColor_1664p_6 * {fill: black !important;}
-/*brings back fullscreen button in radiant lyrics; a little buggy when rl is loading lyrics for a song tidal doesn't have*/
-div._actionButtons_c44ccc7 > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d
-{display:inline !important;}
+[class="has-footer-player is-desktop-app is-now-playing"]{
+[class*="_nowPlayingContainer"]{
+    background: #0000!important;
+    background-color: #0000!important;}}
+[data-test=new-now-playing]>[class*="_content_"]{z-index: 0!important;}
+button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1._iconButton_fe68160._fullscreenButton_109e50d{
+    display: block!important;}
+[class*="_contentInner"] {
+	max-width: none !important;}
