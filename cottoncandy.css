@@ -79,4 +79,4 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[class="_sidebarWrapper_2f256ce"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
