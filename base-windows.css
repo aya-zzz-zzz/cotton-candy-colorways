@@ -106,7 +106,7 @@ transform: translateY(2.2em);
 [class="_wrapper_512d5f4"] {height:100%;transform: translateY(0em); transition: 300ms; transition-delay: -65ms;}}
 /* TOPBAR COLOR*/
 #wimp > div > div > div._mainContainer_6519c30._hasPlayer_57557c6 > div._bar_5b9ac59._smallText_a636ed6{width: 100%!important;background-color: rgba(255, 0, 0, 0)!important;backdrop-filter: blur(1.5px)!important;
-background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.166), rgba(0, 0, 0, 0))!important; }
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .03),rgba(0, 0, 0, 0))!important; }
 /*fullscreen with footer*/
 [class="_fullscreen_236d61b"]{._panelWrapper_5734a06._panelWrapperActive_404b577{
 height: calc(100% - (var(--miniPlayerHeight)*1.51 ))!important; transition: 310ms!important; transition-delay: -95ms!important;}}
@@ -307,6 +307,11 @@ transform: translateX(var(--profbuff))!important;}
 /*==========================================.............................................
     PLAYLISTS / ALBUMS
 -----------------------------------------------======================================== */
+/*playlist folder color (playlist view)*/
+._container_7e465e2{
+    background-color: rgb(var(--cover-LVib1),.7);}
+div._cellCoverContainer_b517623 > a > div > svg > use{
+fill: rgb(0, 0, 0)}
 [data-track--page-id="mycollection_playlists"],[data-test-page-name="my-collection"]{
     --wave-color-text-main: black;
 ._cellContainer_19b23ad{
@@ -445,6 +450,8 @@ a._button_94c5125, button._button_94c5125, ._button_94c5125{ background-color: r
 /* ==========================================.............................................
     SEARCH CONTAINER / RESULTS (BAR IS IN OS-SPECIFIC SECTION)
    -----------------------------------------------======================================== */
+:is(._container_cb5cbe4 ._searchFieldWithPopover_267e090) .searchFieldWithinSearchFieldWithPopover{
+    box-shadow: 0px 0px 1.5em color-mix(in srgb, rgb(var(--cover-Vib1),.3) 90%, rgb(0,0,0,.3) 10%);}
 /*container*/  
 [class="_container_79ca9c5"]{background-color: rgb(var(--cover-Vib2),.9); backdrop-filter: blur(10px); box-shadow: inset 0px 0px 7em rgb(var(--cover-DVib2),.1); outline: none!Important;
 --wave-color-text-main: black;
@@ -529,7 +536,19 @@ button._customButton_e043d7d:hover{background-color: var(--v1);}}
 div._container_9a0abb9>._select_ef84104{background-color: rgb(var(--cover-LVib1));}
 .licenseFrame--C_hup {background: #dbdbff;}
 /*Luna settings*/
-
+/*inactive tab text*/
+.css-71pw0n{
+    color: rgba(0, 0, 0, 0.45);}
+/*inactive tab hover text*/
+.css-71pw0n:hover:not(.Mui-selected){
+    color: black;}
+/*active tab*/
+.css-71pw0n.Mui-selected{
+    background-color: rgba(var(--cover-DVib1),.9);
+    border-radius: 1em;
+    color: white}
+.css-71pw0n.Mui-selected .MuiTab-icon{
+    color: rgb(var(--cover-LVib1));}
 /*text*/
 A .css-yc8597, .css-pfqxe1, .css-axw7ok, .css-1id1h8n, .css-yc8597, .css-pfqxe1, .css-axw7ok, .css-16hze37{
     color: rgba(0, 0, 0, 0.845)!important;}
@@ -623,6 +642,7 @@ color: #000000;}
 [class="_defaultStyles_a1b9da9 _headers_44301eb"]{
 [data-wave-color=textDefault] {color: color-mix(in srgb, rgb(var(--cover-DVib1), 1) 50%, #000000 50%);}}
 /*search boxes*/
+div._container_080b5dc._filter_f2e5a33 > svg > use{fill: color-mix(in srgb, rgb(var(--cover-DVib1), .7) 90%, #000000c1 10%);}
 [class="_container_080b5dc _filter_8933b89"],[class="_container_080b5dc _contentFilter_2d85a1d"]{
 ._icon_77f3f89 {fill:  color-mix(in srgb, rgb(var(--cover-DVib1), .7) 90%, #000000c1 10%);}}
 ._container_080b5dc{border:0!important;
@@ -914,12 +934,17 @@ var(--tracksborder) 80%,
     --shradow: color-mix(in srgb, rgb(var(--cover-DMut1), .08) 67% , rgba(0, 0, 0, 0.1)  33%) ;
     --bladow: color-mix(in srgb, rgb(var(--cover-DMut1), .09) 67% , rgba(0, 0, 0, 0.1)   33%);}}
 .css-5y5x1h:first-child{column-gap: 1.5em;}
-._myTracks_cf06933 > div > div, ._grid_97562f5, .is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.ALBUM_ITEMS.tidal-ui__occlusion > div > div > div > .ReactVirtualized__List.ReactVirtualized__Grid,._moduleContainer_c7ad3d9,
-.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.ALBUM_ITEMS.tidal-ui__occlusion{
+._items_8615603,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.ALBUM_ITEMS.tidal-ui__occlusion,
+._grid_97562f5,.is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion
+{   padding: 1em;
+    padding-top: .8em;
+    border-radius: 1em;
     background-image: 
     radial-gradient(ellipse at center,rgb(var(--cover-DVib1), .01), color-mix(in srgb, rgb(var(--cover-Vib1), .1) 50% , rgba(0, 0, 0, 0.1)  50%) 110%);
     border-color: var(--plylstbrdr);
     backdrop-filter: saturate(var(--plylstsat)) brightness(var(--plylstbrt));}
+
+._items_8615603{._tableContainer_556e9aa{transform: translateY(-1.6em);}}
 
 @media (max-width:1700px){
 .is-intersecting._occlusion_de6b9d3._defaultStyles_a1b9da9.TRACK_LIST.tidal-ui__occlusion{
@@ -1161,6 +1186,8 @@ margin-bottom: -140px!important;}
     ._icon_77f3f89 {fill:  color-mix(in srgb, rgb(255, 255, 255) 5% , rgb(var(--cover-Vib1), 1) 95%);transition: 550ms;}}
 /*nav item active bg color*/
 ._navigationItem_4e9deae._selected_29027d1{
+    outline-width: .15em;
+    box-shadow: inset 0px 0px 1em color-mix(in srgb, rgb(255, 255, 255) 25% , rgb(var(--cover-Vib1), 1) 75%);
     color:  color-mix(in srgb, rgb(255, 255, 255) 5% , rgb(var(--cover-Vib1), 1) 95%);
     outline-color: color-mix(in srgb, rgb(255, 255, 255) 25% , rgb(var(--cover-Vib1), 1) 75%);
     transition: 300ms;transition-delay: -50ms;
