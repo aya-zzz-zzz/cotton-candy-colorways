@@ -1,7 +1,7 @@
 ## Table of Contents:
-1. Instructions
-2. Radiant Lyrics compatibility instructions
-3. colorway galleries
+1. [Instructions](https://github.com/aya-zzz-zzz/cotton-candy-colorways/tree/main#instructions)
+2. [Radiant Lyrics compatibility instructions](https://github.com/aya-zzz-zzz/cotton-candy-colorways/tree/main#radiant-lyrics-compatibility)
+3. [colorway galleries](https://github.com/aya-zzz-zzz/cotton-candy-colorways/tree/main#colorway-gallery)
 
 ## Instructions:
 1.click the base theme file for your OS
@@ -16,7 +16,7 @@
 
 ![image](https://i.imgur.com/0LWp1B2.png)
 
-4. paste link in THEMES section of Tidaluna settings
+4. paste link in THEMES section of [Tidaluna](https://github.com/Inrixia/TidaLuna) settings
 
 ![image](https://i.imgur.com/wxke59e.png)
 
