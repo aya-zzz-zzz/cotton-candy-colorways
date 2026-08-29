@@ -1,11 +1,3 @@
-/* { * *
- "name": "cotton candy",
- "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light theme) and Acercandr0 (from their Lunallena theme)",
- "description": "colorful light theme for tidaluna"
- "license": "MIT License"
- * } */
-
-
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
 
@@ -25,7 +17,7 @@
         --cover-F00TBAR1:  253, 141, 246   ; /*footer progress bar color (not now-playing)*/
         --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(252, 141, 246);
+        --bhdf:    rgb(255, 68, 246);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -73,19 +65,22 @@ div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataC
   -----------------------------------------------======================================== */
 /*playlist view background image remover*/
 div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
-/*now playing background*/
+/*main bg*/
+:root{
+    --ppp: 255, 68, 246;
+}
 ._mainContainer_6519c30{
     background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
     background-image: 
 linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
-radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--cover-Vib1),0.25) 95%, rgb(var(--cover-DVib1),0.25) 5%),rgb(var(--cover-DMut1),0.02)70%),
-radial-gradient(circle at bottom right,rgb(var(--cover-Vib1),.2),transparent 53%),
-radial-gradient(circle at bottom left,rgb(var(--cover-Vib1),.2),transparent 53%),
-radial-gradient(ellipse at top left, rgb(var(--cover-LVib1),0.5), rgb(var(--cover-Vib1),0.6),rgba(0, 128, 0, 0) 90%),
-radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--cover-Vib1),0.35) 50%, rgb(var(--cover-DVib1),0.1) 50%),rgb(var(--cover-LMut1),0.25) 70%),
-radial-gradient(ellipse at center right,rgb(var(--cover-Vib1),0.5),rgb(var(--cover-LMut1),0.0) 70%),
-radial-gradient(ellipse at bottom right,rgb(var(--cover-Vib1),0.3),transparent 80%),
-radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--ppp),0.25) 95%, rgb(var(--cover-DVib1),0.25) 5%),rgb(var(--cover-DMut1),0.02)70%),
+radial-gradient(circle at bottom right,rgb(var(--ppp),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--ppp),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--cover-LVib1),0.5), rgb(var(--ppp),0.6),rgba(0, 128, 0, 0) 90%),
+radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--ppp),0.35) 50%, rgb(var(--cover-DVib1),0.1) 50%),rgb(var(--cover-LMut1),0.25) 70%),
+radial-gradient(ellipse at center right,rgb(var(--ppp),0.5),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--ppp),0.3),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--ppp), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
 !important;}
 ._fullscreen_236d61b{
 background-color: rgb(var(--cover-Vib1)); }
