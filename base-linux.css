@@ -157,8 +157,6 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 /* =========================================================
   END OF LINUX TYPE SHIT
    ========================================================= */
-
-
 /* ==========================================.............................................
 /* ==========================================.............................................
    ==========================================.............................................
@@ -245,7 +243,6 @@ transform: translateX(var(--profbuff))!important;}
     fill: #ffd8f3!important; }}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
- border-color: color-mix(in srgb, var(--v2) 50%, rgb(255, 255, 255) 50% ) ;border-width: 2px;
 ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
 ._icon_77f3f89 {fill: rgb(var(--cover-DVib1),.8) !important;}
     background: linear-gradient(170deg,
@@ -254,7 +251,7 @@ transform: translateX(var(--profbuff))!important;}
     color-mix(in srgb, var(--v2) 25%, rgb(var(--cover-DVib2),.1) 75%), color-mix(in srgb, var(--v2) 35%, rgb(var(--cover-DVib2),.1) 65%),
     color-mix(in srgb, var(--v2) 50%, rgba(255, 255, 255, 0.522) 50%),  color-mix(in srgb, var(--v2) 48%, white 52%),
     color-mix(in srgb, var(--v2) 46%, white 54%));
-    background-size: 340% 340%;
+    background-size: 450% 400%;
     animation: buttongradient2 750s cubic-bezier(.24,.48,.67,.56) ;
     animation-iteration-count: 1;
     box-shadow: 0 0 15px #b5d0ff51;
@@ -1695,13 +1692,13 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
 /*artist card*/
 ._card_2b91b88{
 ._marketText_1lyag_1._text10_1lyag_287{color: rgba(0, 0, 0, 0.8)}
-._marketButton_1l1bl_1._small_1l1bl_3._primary_1l1bl_6{
+._primary_1d16h_6,._secondary_1d16h_7{
   background-color: #0000;
   border-style: solid;
   border-color: rgb(var(--cover-LVib1)) !important;
     background-image: linear-gradient(var(--rotate), rgb(var(--cover-Vib1),.95), rgb(var(--cover-LVib1), .9));animation: rotate-gradient 18s cubic-bezier(.33,.48,.63,.47) infinite;}
    
-._marketButton_1l1bl_1._small_1l1bl_3:hover{
+._primary_1d16h_6:hover,._tertiary_1d16h_8:hover,._secondary_1d16h_7:hover{
     span{color: rgb(var(--cover-LVib1))!important;}
      color: rgb(var(--cover-LVib1));
     text-shadow: 0px 0px 5px rgb(var(--cover-LVib1), .7);
@@ -1716,7 +1713,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     border-color: color-mix(in srgb, rgb(var(--cover-DMut1), 1) 50% , rgba(0, 0, 0, 1) 50%) !important;}
 
     span{color: rgb(var(--cover-DVib1), .9)!important}
-    ._marketButton_1l1bl_1._small_1l1bl_3._tertiary_1l1bl_8{
+._tertiary_1d16h_8{
         background-color: rgba(255, 255, 255, 0.2);
         border-style: solid;
         border-color: rgb(var(--cover-LVib1),.5)}
@@ -1930,7 +1927,6 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
     fill: color-mix(in srgb, var(--v2) 25%, white 75%);}}
 /*HORIZONTAL CARD HOVER*/
 ._item_235a32d:hover{
- border-color: color-mix(in srgb, var(--v1) 50%, white 50% ) ;border-width: 2px;
 ._marketIcon_1664p_1._singleColor_1664p_6 *{fill: rgb(var(--cover-DVib1),.8)  !important;}
     background: linear-gradient(170deg,
         #10073100,#10073100,
@@ -1938,7 +1934,7 @@ div._marketText_1lyag_1._display10_1lyag_39._text_4a89397._hasCues_15d8b83 > spa
     color-mix(in srgb, var(--v2) 25%, rgb(var(--cover-DVib2),.1) 75%), color-mix(in srgb, var(--v2) 35%, rgb(var(--cover-DVib2),.1) 65%),
     color-mix(in srgb, var(--v2) 50%, white 50%),  color-mix(in srgb, var(--v2) 48%, white 52%),
     color-mix(in srgb, var(--v2) 46%, white 54%));
-    background-size: 340% 340%;
+    background-size: 450% 400%;
     animation: buttongradient2 750s cubic-bezier(.24,.48,.67,.56) ;
     animation-iteration-count: 1;
     box-shadow: 0 0 15px #b5d0ff51;
@@ -2022,7 +2018,8 @@ span._metaItem_ed501cd.wave-text-capital-demi{font-weight: 700!important;font-si
 
 
 /*this has to stay at the bottom for reasons unbeknownst to me <3*/ 
-._thumbnail_f82abfa:after{box-shadow: none;}
+._thumbnail_f82abfa:after,._imageWrapper_aecc0c5:after,._artworkTilt_1c6d5cc:after,
+._artworkContainer_3cdbf46:after,._imageContainer_aa04376:after{box-shadow: none;}
 /*sidebar playlist bg hover remover*/ 
 ._contentItem_684cbbe:hover,._contentItem_684cbbe._selected_ae83ba5{background-color: #0000;
 ._thumbnail_f82abfa img{filter: none;}}
