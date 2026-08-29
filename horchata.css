@@ -3,9 +3,9 @@
 -----------------------------------------------======================================== */
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
-        --cover-Vib1:      157, 145, 136 ;
+        --cover-Vib1:      163, 152, 144 ;
         --cover-DVib1:     41, 36, 32 ;
-        --cover-LVib1:     219, 211, 204;
+        --cover-LVib1:     192, 185, 179;
 
         --cover-Vib2:      207, 188, 166  ;
         --cover-DVib2:     41, 36, 32  ;
@@ -15,28 +15,28 @@
         --cover-DMut1:     74, 66, 58 ;
         --cover-LMut1:     239, 188, 236 ;
 
-        --cover-F00T:      206, 196, 189;
+        --cover-F00T:      211, 202, 195;
         --cover-F00TBAR1:  43, 40, 37;
         --cover-F00TD:     74, 66, 58;
        
         --sephue: 3deg; 
 
-        --plylstsat: 1.3;
-        --plylstbrt: 1.118;
+        --plylstsat: 1.1;
+        --plylstbrt: 1.1;
 
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(219, 211, 204);
+        --bhdf:    rgb(211, 202, 195);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
         --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 34% , rgb(var(--cover-Vib1), 1) 66%); /*controls sidebar background-color*/
 
 
-        --plylstbrdr: rgba(221, 217, 199, 0.741); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrdr: rgb(211, 205, 192); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
 
-        --feedsat: 1.3; /*controls backdrop-saturation for home feed inner container*/
-        --feedbrt: 1.1; /*controls backdrop-brightness for home feed inner container*/
+        --feedsat: 1.1; /*controls backdrop-saturation for home feed inner container*/
+        --feedbrt: 1.03; /*controls backdrop-brightness for home feed inner container*/
         --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib1), .9) 60% , rgba(255, 255, 255, 0.9)  40%)72% , rgb(var(--cover-LVib1),.9)  28%); /*controls border-color for home feed inner container*/
 
         /*selected track colors*/
@@ -64,14 +64,14 @@ div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataC
     background-color: color-mix(in srgb, rgb(var(--cover-LightVibrant),1) 10% ,rgb(255, 255, 255) 90%) ;
     background-image: 
 linear-gradient(180deg, rgba(204, 204, 204, 0.122), rgba(179, 179, 179, 0.15)),
-radial-gradient(ellipse at center,transparent,rgb(var(--cover-DVib1),.15) 333%),
-radial-gradient(ellipse at center left,rgb(var(--cover-Vib1),.25),transparent 22%),
+radial-gradient(ellipse at center,transparent,rgb(var(--cover-DVib1),.1) 333%),
+radial-gradient(ellipse at center left,rgb(var(--cover-LVib1),.25),transparent 22%),
 radial-gradient(ellipse at top left, rgb(var(--cover-Vib2),0.6) ,  rgb(var(--cover-Vib1),0.275)    ,rgba(0, 128, 0, 0) 90%),
 radial-gradient(ellipse at bottom left,rgb(var(--cover-Vib2),1),rgb(var(--cover-LMut1),0.0) 70%),
-radial-gradient(ellipse at center right,color-mix(in srgb, rgb(var(--cover-Vib1),1) 80% ,rgb(255, 255, 255) 20%) ,rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at center right,color-mix(in srgb, rgb(var(--cover-LVib1),1) 80% ,rgb(255, 255, 255) 20%) ,rgb(var(--cover-LMut1),0.0) 70%),
 radial-gradient(ellipse at bottom right,rgb(var(--cover-LVib1),0.89),transparent 80%),
-radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-Vib1), .7) 40%, rgb(255, 255, 255) 60%),transparent 110%),
-linear-gradient(rgb(var(--cover-DVib1)) , rgb(var(--cover-DVib1)))!important;}
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--cover-LVib1), .7) 40%, rgb(255, 255, 255) 60%),transparent 110%),
+linear-gradient(rgb(var(--cover-DVib1),.1) , rgb(var(--cover-Vib1),.2))!important;}
 ._mainContainer_6519c30{
     background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
     background-image: 
