@@ -291,6 +291,13 @@ transform: translateX(var(--profbuff))!important;}
 /*==========================================.............................................
     PLAYLISTS / ALBUMS
 -----------------------------------------------======================================== */
+
+/*header text adjustments*/
+[class="_dataContainer_5bb6028"], [class="_dataContainer_66f4f40"] {
+    [data-wave-color=textDefault] {transform: translateY(-.55em);}
+    ._artistCreatorText_b699bdf{font-size: 17px;}
+    [data-wave-color=textSecondary] {font-size: 12px!Important;
+    ._item_39605ae{font-size: 18px;}}}
 ._cellImage_0ef8dd3{outline: none;}
 /*playlist width*/
 ._items_8615603{
