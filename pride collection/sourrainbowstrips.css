@@ -18,6 +18,12 @@
         --cover-F00T:      255, 135, 135 ; /*footer color (not now-playing)*/
         --cover-F00TBAR1:  77, 0, 11   ; /*footer progress bar color (not now-playing)*/
         --cover-F00TD:     0, 7, 7      ; /*darker version of F00T color*/
+
+        --F00TNP:          rgba(255, 177, 177, 0.243) ; /*footer color (now-playing)*/
+        --SBTXT:          rgb(88, 15, 15) ; /*footer color (not now-playing)*/
+        --ICON: rgb(229, 19, 19);
+        --footcard: rgba(255, 207, 207, 0.4);
+        --footcard2: rgba(255, 207, 232, 0.24);
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(192, 255, 200);
 
@@ -47,6 +53,18 @@
         /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(130, 111, 255);
         --but2: rgb(192, 110, 255);}
+
+:root{
+    --red: rgb(230, 0, 96); /*luna settings red buttons, close button hover, error popup bg*/
+    --blu: rgb(157, 180, 255); /*hq text color*/
+    --ylw: rgb(255, 243, 185); /*max quality text color*/
+    --but: rgb(var(--cover-DVib1)); /*luna settings buttons*/
+
+    --maintxt: var(--cover-DVib1); 
+    --card: var(--cover-Vib1);
+    --card2: var(--cover-Vib1),.3;
+    --card3: rgb(var(--cover-Vib1),.4);
+ --dabuiobd: rgb(255, 132, 237);}
 /* ===========================----BACKGROUND TEXURES----=============================== */
 /*playlist view background image remover*/
 div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
@@ -73,7 +91,7 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[class="_sidebarWrapper_2f256ce"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(300deg) saturate(1.4) brightness(.9); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(300deg) saturate(1.4) brightness(.9); transition: 0ms;}}
 /* ==========================================.............................................
    END OF BUILTINTHEME
 -----------------------------------------------======================================== */
