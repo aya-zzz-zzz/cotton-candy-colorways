@@ -16,6 +16,9 @@
         --cover-F00T:      180, 208, 255 ; /*footer color (not now-playing)*/
         --cover-F00TBAR1:  253, 141, 246   ; /*footer progress bar color (not now-playing)*/
         --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
+        --footcard: rgba(229, 236, 255, 0.4);
+        --footcard2: rgba(255, 230, 252, 0.24);
+
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(255, 68, 246);
 
@@ -45,6 +48,20 @@
         /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(233, 87, 204);
         --but2: rgb(102, 133, 233);}
+
+
+:root{
+    --red: rgb(230, 0, 96); /*luna settings red buttons, close button hover, error popup bg*/
+    --blu: rgb(187, 225, 255); /*hq text color*/
+    --ylw: rgb(255, 250, 224); /*max quality text color*/
+    --but: rgb(var(--cover-DVib1)); /*luna settings buttons*/
+
+    --maintxt: var(--cover-DVib1); 
+    --card: var(--cover-Vib1);
+    --card2: var(--cover-Vib1),.3;
+    --card3: rgb(var(--cover-Vib1),.4);
+ --dabuiobd: rgb(255, 132, 237);}
+
 /* ===========================----BACKGROUND TEXURES----=============================== */
 ._background_42cea4e{
      backdrop-filter: blur(4em) brightness(1.46) saturate(1.3);
