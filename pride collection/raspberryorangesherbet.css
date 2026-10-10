@@ -4,62 +4,61 @@
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
 
-        --cover-Vib1:      255, 72, 191  ; /* first vibrant color ("vibrant" color doesn't really have to be very saturated, it's just what the variable is called)*/
-        --cover-DVib1:     11, 0, 18     ; /* darker version of first vibrant color*/
-        --cover-LVib1:     255, 175, 227 ; /* lighter version of first vibrant color*/
+        --cover-Vib1:      255, 73, 204 ; /* first vibrant color ("vibrant" color doesn't really have to be very saturated, it's just what the variable is called)*/
+        --cover-DVib1:     85, 0, 61      ; /* darker version of first vibrant color*/
+        --cover-LVib1:     255, 166, 230 ; /* lighter version of first vibrant color*/
 
-        --cover-Vib2:      84, 72, 255   ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
-        --cover-DVib2:     0, 2, 23      ; /* darker version of second vibrant color*/
-        --cover-LVib2:     173, 178, 255 ; /* lighter version of second vibrant color*/
+        --cover-Vib2:      255, 83, 45 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-DVib2:     17, 0, 10     ; /* darker version of second vibrant color*/
+        --cover-LVib2:     255, 180, 163 ; /* lighter version of second vibrant color*/
 
         --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this theme was fully covertheme compatible)*/
-        --cover-DMut1:     2, 0, 2       ; /* darker version of muted color*/
+        --cover-DMut1:     2, 0, 2      ; /* darker version of muted color*/
         --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
 
-        --cover-F00T:      222, 151, 255; /*footer color (not now-playing)*/
-        --cover-F00TBAR1:  15, 0, 37    ; /*footer progress bar color (not now-playing)*/
-        --cover-F00TD:     0, 7, 67     ; /*darker version of F00T color*/
+        --cover-F00T:      255, 144, 224 ; /*footer color (not now-playing)*/
+        --cover-F00TBAR1:  85, 0, 61   ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
         
-        --F00TNP:          rgba(255, 206, 234, 0.202) ; /*footer color (now-playing)*/
-        --SBTXT:          rgb(255, 222, 254) ; /*footer color (not now-playing)*/
-        --ICON: rgb(215, 14, 152);
-        --footcard: rgba(253, 201, 255, 0.4);
-        --footcard2: rgba(255, 230, 252, 0.165);
-
+        --F00TNP:          rgba(255, 181, 223, 0.21) ; /*footer color (now-playing)*/
+        --SBTXT:          rgb(66, 11, 64) ; /*footer color (not now-playing)*/
+        --ICON: rgb(255, 214, 237);
+        --footcard: rgba(255, 205, 247, 0.4);
+        --footcard2: rgba(255, 225, 205, 0.169);
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(84, 72, 255);
+        --bhdf:    rgb(255, 73, 204);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
-        --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 22% , rgb(var(--cover-Vib1), .7) 78%); /*controls sidebar background-color*/
+        --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 34% , rgb(var(--cover-Vib1), .7) 66%); /*controls sidebar background-color*/
 
         --sephue: 267deg; /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
         --plylstsat: 2.1; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
         --plylstbrt: 1.1; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
-        --plylstbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .3) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib2),.4)  28%);  /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .5) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib1),.4)  28%);  /*controls border-color for most inner containers, such as the album or playlist tracklist*/
 
         --feedsat: 1.85; /*controls backdrop-saturation for home feed inner container*/
         --feedbrt: 1.1; /*controls backdrop-brightness for home feed inner container*/
-        --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .3) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib2),.4)  28%); /*controls border-color for home feed inner container*/
+        --feedbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib2), .5) 60% , rgba(255, 255, 255, 0.4)  40%)72% , rgb(var(--cover-LVib1),.4)  28%); /*controls border-color for home feed inner container*/
 
         /*selected track colors*/
-        --tracksel1: rgb(255, 143, 229); /*selected track animated gradient color 1*/
-        --tracksel2: rgb(255, 134, 239); /*selected track animated gradient color 2*/
+        --tracksel1: color-mix(in srgb, rgb(var(--cover-Vib2),.35) 90% , rgb(var(--cover-LVib2),.3) 10%); /*selected track animated gradient color 1*/
+        --tracksel2: color-mix(in srgb, rgb(var(--cover-Vib1),.35) 60% , rgb(var(--cover-LVib2),.25) 40%); /*selected track animated gradient color 2*/
         --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
         --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
-        --tracksborder : rgb(216, 188, 255); /*tracklist divider line color; should be fully opaque*/
+        --tracksborder : rgb(255, 216, 199); /*tracklist divider line color; should be fully opaque*/
         /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
-        --v1: rgb(62, 59, 255); /*should vaguely match --cover-Vib1*/
-        --v2: rgb(255, 33, 174); /*should vaguely match --cover-Vib2*/
+        --v1: rgb(255, 104, 58); /*should vaguely match --cover-Vib1*/
+        --v2: rgb(255, 75, 219); /*should vaguely match --cover-Vib2*/
         /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
-        --but1: rgb(255, 0, 162);
-        --but2: rgb(70, 57, 255);}
+        --but1: rgb(255, 75, 183);
+        --but2: rgb(255, 104, 58);}
 
 :root{
     --red: rgb(230, 0, 96); /*luna settings red buttons, close button hover, error popup bg*/
-    --blu: rgb(187, 225, 255); /*hq text color*/
-    --ylw: rgb(255, 250, 224); /*max quality text color*/
+    --blu: rgb(160, 214, 255); /*hq text color*/
+    --ylw: rgb(255, 242, 177); /*max quality text color*/
     --but: rgb(var(--cover-DVib1)); /*luna settings buttons*/
 
     --maintxt: var(--cover-DVib1); 
@@ -74,7 +73,7 @@ div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataC
 ._background_42cea4e{
      backdrop-filter: blur(4em) brightness(1.46) saturate(1.3);
 background-color: #ffa8ed00!important;
-    background: linear-gradient(var(--rotate),rgb(255, 64, 226,.65),rgb(129, 79, 255,.65),rgb(74, 86, 255,.65)100%);
+    background: linear-gradient(var(--rotate),rgba(233, 84, 34, 0.65),rgb(255, 133, 92,.65), rgba(243, 108, 182, 0.65), rgba(223, 47, 164, 0.65));
     background-size: 350% 350%;
     animation: rotate-gradient 102s cubic-bezier(.29,.44,.67,.56) infinite;}
 #nowPlaying {background-color: #ffe9ff32;
@@ -84,8 +83,8 @@ background-size: 800px 800px;background-position: 0 0,400px 400px;}
 ._mainContainer_6519c30{
     background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
     background-image: 
-linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-radial-gradient(ellipse at top left,rgb(255, 64, 226),rgb(129, 79, 255),rgb(74, 86, 255)100%)
+linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.5)),
+radial-gradient(ellipse at top left,rgb(255, 64, 0),rgb(255, 93, 39),rgb(255, 133, 92), rgb(255, 190, 190), rgb(255, 122, 228), rgb(255, 65, 214),rgb(255, 0, 191) 100%)
 !important;}
 ._fullscreen_236d61b{
 background-color: rgb(var(--cover-Vib1)); }
