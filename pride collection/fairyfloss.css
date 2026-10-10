@@ -19,6 +19,13 @@
         --cover-F00T:      180, 213, 255 ; /*footer color (not now-playing)*/
         --cover-F00TBAR1:  253, 141, 246   ; /*footer progress bar color (not now-playing)*/
         --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
+
+        --F00TNP:          rgba(255, 206, 234, 0.202) ; /*footer color (now-playing)*/
+        --SBTXT:          rgb(255, 224, 254) ; /*footer color (not now-playing)*/
+        --ICON: rgb(255, 217, 252);
+        --footcard: rgba(229, 236, 255, 0.4);
+        --footcard2: rgba(255, 230, 252, 0.24);
+
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(77, 190, 255);
 
@@ -48,13 +55,25 @@
         /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
         --but1: rgb(255, 115, 227);
         --but2: rgb(125, 155, 255);}
+
+:root{
+    --red: rgb(230, 0, 134); /*luna settings red buttons, close button hover, error popup bg*/
+    --blu: rgb(187, 225, 255); /*hq text color*/
+    --ylw: rgb(255, 250, 224); /*max quality text color*/
+    --but: rgb(var(--cover-DVib1)); /*luna settings buttons*/
+
+    --maintxt: var(--cover-DVib1); 
+    --card: var(--cover-Vib1);
+    --card2: var(--cover-Vib1),.3;
+    --card3: rgb(var(--cover-Vib1),.4);
+ --dabuiobd: rgb(255, 132, 237);}
 /* ===========================----BACKGROUND TEXURES----=============================== */
 /*playlist view background image remover*/
 div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
 /*now playing background*/
 ._background_42cea4e{
      backdrop-filter: blur(4em) brightness(1.46) saturate(1.3);
-background-color: #ffa8ed00!important;
+background-color: #fffdff00!important;
     background: linear-gradient(var(--rotate), #ff8fdbb4,#ed92ffbf,#ff91e3b1, #8fb4ffb0, #87a7ffbb
     ,#ff8ae2bb, #ff92f2ba,#ff91f0b3, #8ab1ffba, #94b4ffb3, #8fa5ffb2);
     background-size: 350% 350%;
@@ -85,7 +104,7 @@ radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--Vibby),0.4) 50%
 radial-gradient(ellipse at center right,rgb(var(--Vibby),0.7),rgb(var(--LMitty),0.0) 70%),
 radial-gradient(ellipse at bottom right,rgb(var(--Vibby),0.4),transparent 80%),
 radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--Vibby), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
-,linear-gradient(180deg, rgb(219, 219, 219))
+,linear-gradient(180deg, rgb(255, 255, 255))
 !important;}
 
 ._fullscreen_236d61b{
@@ -94,7 +113,7 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[class="_sidebarWrapper_2f256ce"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1) brightness(.95); transition: 0ms;}}
 
 /* ==========================================.............................................
    END OF BUILTINTHEME
