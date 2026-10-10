@@ -1,0 +1,114 @@
+/* ===========================----COLOR VARIABLES----================================== */
+    :root{
+
+        --cover-Vib1:     56, 168, 117; /* first vibrant color ("vibrant" color doesn't really have to be very saturated, it's just what the variable is called)*/
+        --cover-DVib1:     0, 9, 21      ; /* darker version of first vibrant color*/
+        --cover-LVib1:    140, 198, 172 ; /* lighter version of first vibrant color*/
+
+        --cover-Vib2:      100, 222, 166 ; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-DVib2:     0, 9, 21      ; /* darker version of second vibrant color*/
+        --cover-LVib2:     86, 140, 108 ; /* lighter version of second vibrant color*/
+
+        --cover-Mut1:      120, 223, 217 ; /* muted color (these barely show up they're kind of a holdover from when this theme was fully covertheme compatible)*/
+        --cover-DMut1:     16, 0, 32     ; /* darker version of muted color*/
+        --cover-LMut1:     152, 187, 165 ; /* light version of muted color*/
+
+        --cover-F00T:     172, 216, 193 ; /*footer color (not now-playing)*/
+        --F00TNP:          rgba(207, 246, 226, 0.302) ; /*footer color (now-playing)*/
+        --SBTXT:          rgb(73, 120, 98) ; /*footer color (not now-playing)*/
+        --ICON: rgb(238, 255, 244);
+        --cover-F00TBAR1:  11, 57, 43  ; /*footer progress bar color (not now-playing)*/
+        --cover-F00TD:     0, 56, 39      ; /*darker version of F00T color*/
+        --footcard: rgba(202, 244, 220, 0.464);
+        --footcard2: rgba(158, 225, 196, 0.331);
+
+        /*bhdf doesnt do nuthin it's just here to make color picking easier*/
+        --bhdf:    rgb(56, 168, 117) ;
+
+        --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
+
+        --cover-S1D3B4R:  rgb(165, 208, 184); /*controls sidebar background-color*/
+
+        --sephue: 100deg; /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
+
+        --plylstsat: 1.35; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: .98; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrdr: rgb(182, 215, 196); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
+
+        --feedsat: 1.5; /*controls backdrop-saturation for home feed inner container*/
+        --feedbrt: .98; /*controls backdrop-brightness for home feed inner container*/
+        --feedbrdr: rgb(185, 219, 200); /*controls border-color for home feed inner container*/
+
+        /*selected track colors*/
+        --tracksel1: rgb(111, 188, 143); /*selected track animated gradient color 1*/
+        --tracksel2: rgb(127, 192, 145); /*selected track animated gradient color 2*/
+        --trackselshad: rgb(var(--cover-DVib1),.09); /*selected track inset shadow color*/
+        --trackseltxt: color-mix(in srgb, rgb(var(--cover-DVib1),1) 10% , black 90%); /*selected text color*/
+        --tracksborder : rgb(171, 214, 183); /*tracklist divider line color; should be fully opaque*/
+        /*home page top tab thingies (not like the "for you," or "staff picks" buttons, this is for the six big rectangles below those)*/
+        --v1: rgb(76, 166, 131); /*should vaguely match --cover-Vib1*/
+        --v2: rgb(103, 175, 133); /*should vaguely match --cover-Vib2*/
+        /*MAIN BUTTONS (PLAY / SHUFFLE BUTTONS BUT ALSO OTHER STUFF SOMETIMES)*/
+        --but1: rgb(55, 158, 116);
+        --but2: rgb(62, 167, 118);}
+
+
+:root{
+    --red: rgb(255, 72, 72); /*luna settings red buttons, close button hover, error popup bg*/
+    --blu: rgb(112, 255, 231); /*hq text color*/
+    --ylw: rgb(234, 255, 138); /*max quality text color*/
+    --but: rgb(var(--cover-DVib1)); /*luna settings buttons*/
+
+    --maintxt: var(--cover-DVib1); 
+    --card: var(--cover-Vib1),.2;
+    --card2: var(--cover-Vib1),.3;
+    --card3: rgb(var(--cover-Vib1),.4);
+ --dabuiobd: rgb(203, 223, 211);}
+
+/* ===========================----BACKGROUND TEXURES----=============================== */
+._background_42cea4e{
+     backdrop-filter: blur(4em) brightness(1.46) saturate(1.3);
+background-color: #ffa8ed00!important;
+    background: linear-gradient(var(--rotate), #88cbb08f,#87c8a68e,#8fc9ac89, #8dccc585, #82c8c989
+    ,#8acebc8f, #8dc9b98d,#8bc6ba90, #82c0a191, #83bc999d, #87be9f85);
+    background-size: 350% 350%;
+    animation: rotate-gradient 102s cubic-bezier(.29,.44,.67,.56) infinite;}
+#nowPlaying {background-color: #e9fff229;
+background-image:  radial-gradient(#06002560 112px, rgba(0, 41, 25, 0.158) 322px), radial-gradient(#001c0e4e 15px, #00211d16 612px);
+background-size: 800px 800px;background-position: 0 0,400px 400px;}
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+
+/* ==========================================.............................................
+    BACKGROUND TEXURESSSS
+  -----------------------------------------------======================================== */
+/*playlist view background image remover*/
+div._dataContainer_5bb6028::before,div._dataContainer_7feb4a2::before,div._dataContainer_66f4f40::before{background-image: none;}
+/*main bg*/
+:root{
+    --ppp: 203, 223, 211;
+}
+._mainContainer_6519c30{
+    background-color: color-mix(in srgb,rgb(var(--cover-LVib1)) 0%, white 100%);
+    background-image: 
+linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)),
+radial-gradient(ellipse at top left,color-mix(in srgb,rgb(var(--ppp),0.25) 95%, rgb(var(--cover-DVib1),0.1) 5%),rgb(var(--cover-DMut1),0.02)70%),
+radial-gradient(circle at bottom right,rgb(var(--ppp),.2),transparent 53%),
+radial-gradient(circle at bottom left,rgb(var(--ppp),.2),transparent 53%),
+radial-gradient(ellipse at top left, rgb(var(--cover-LVib1),0.175), rgb(var(--cover-LVib1),.65),rgb(var(--cover-LVib1),.175) 90%),
+radial-gradient(ellipse at top right,color-mix(in srgb,rgb(var(--ppp),0.3) 50%, rgb(var(--cover-DVib1),0.02) 50%),rgb(var(--cover-LMut1),0.1) 70%),
+radial-gradient(ellipse at center right,rgb(var(--ppp),0.5),rgb(var(--cover-LMut1),0.0) 70%),
+radial-gradient(ellipse at bottom right,rgb(var(--ppp),0.3),transparent 80%),
+radial-gradient(ellipse at top center ,color-mix(in srgb,rgb(var(--ppp), 1) 40%, rgb(255, 255, 255) 60%),transparent 110%)
+!important;}
+._fullscreen_236d61b{
+background-color: rgb(var(--cover-Vib1)); }
+._main_a5d9f44{ background-color: #ff000000!important;
+background: none!important;}
+
+/*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.4) brightness(.95); transition: 0ms;}}
+
+/* ==========================================.............................................
+   END OF BUILTINTHEME
+-----------------------------------------------======================================== */
