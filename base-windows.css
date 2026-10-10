@@ -186,6 +186,37 @@ div._controls_7a73a1e > button._closeButton_560a9f3._button_8536ec0:hover{
     animation: bounc .2s cubic-bezier(.29,.44,.67,.56) 1, rotate-gradient 4s cubic-bezier(.33,.48,.63,.47) infinite;filter: brightness(1.13) saturate(1.2);transition: 200ms!important;}
 div[class*="_bar_"] button[class*="_button_"] svg:active{filter: brightness(1.3);transform: scale(1) translateY(.1em)!important;transition: 20ms!important;border-radius: .27em!important;}
 ._bar_21140dc{ transform: translateY(-1.6em);}    
+
+[class="has-footer-player is-desktop-app is-now-playing"],[class="has-footer-player is-desktop-app"]{
+ @media (min-height:0px){
+
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.2 )) !important;}}
+
+ @media (min-height:800px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.275 )) !important;}}
+
+ @media (min-height:900px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.305)) !important;}}
+
+ @media (min-height:1000px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) *2.35 )) !important;}}
+
+@media (min-height:1100px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.39 )) !important;}}
+
+@media (min-height:1200px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.45 )) !important;}}
+
+@media (min-height:1500px){
+[class="_wrapper_512d5f4"]{
+    height: calc(100vh - (var(--miniPlayerHeight) * 2.6 )) !important;}}}
+    
 /* =========================================================
   END OF WINDOWS TYPE SHIT
    ========================================================= */
@@ -2288,3 +2319,5 @@ button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1.
     display: block!important;}
 [class*="_contentInner"] {
 	max-width: none !important;}
+   #nowPlaying > header > div._buttons_6ec911e > div._actionButtons_c44ccc7 > button._marketButton_1d16h_1._tertiary_1d16h_8._small_1d16h_3._iconOnly_1d16h_1._iconButton_fe68160._fullscreenButton_109e50d{
+    display: block!Important;}
