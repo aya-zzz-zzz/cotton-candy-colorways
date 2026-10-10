@@ -4,9 +4,9 @@
         --cover-DVib1:     20, 20, 20      ; /* darker version of first vibrant color*/
         --cover-LVib1:     255, 149, 209; /* lighter version of first vibrant color*/
 
-        --cover-Vib2:      178, 134, 255; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
+        --cover-Vib2:      255, 103, 65; /* second vibrant color (can be the same as the first if you're going for a monochromatic dealy)*/
         --cover-DVib2:     20, 20, 20      ; /* darker version of second vibrant color*/
-        --cover-LVib2:     255, 250, 224 ; /* lighter version of second vibrant color*/
+        --cover-LVib2:     255, 180, 134 ; /* lighter version of second vibrant color*/
 
         --cover-Mut1:      120, 219, 221 ; /* muted color (these barely show up they're kind of a holdover from when this theme was fully covertheme compatible)*/
         --cover-DMut1:     16, 0, 32     ; /* darker version of muted color*/
@@ -22,7 +22,7 @@
         --footcard2: rgba(75, 247, 244, 0.4);
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(160, 237, 240) ;
+        --bhdf:    rgb(255, 180, 134) ;
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -30,12 +30,12 @@
 
         --sephue: 272deg; /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
-        --plylstsat: 1.5; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
-        --plylstbrt: 1.02; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
+        --plylstsat: 1.3; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: 1.03; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
         --plylstbrdr: rgb(255, 197, 242); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
 
-        --feedsat: 1.5; /*controls backdrop-saturation for home feed inner container*/
-        --feedbrt: 1.01; /*controls backdrop-brightness for home feed inner container*/
+        --feedsat: 1.45; /*controls backdrop-saturation for home feed inner container*/
+        --feedbrt: 1.02; /*controls backdrop-brightness for home feed inner container*/
         --feedbrdr: rgb(252, 201, 241); /*controls border-color for home feed inner container*/
 
         /*selected track colors*/
@@ -115,7 +115,7 @@ linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
      radial-gradient(circle at 35% 45%, hsla(326, 100%, 50%, var(--star1)) 1px, transparent 0),
     radial-gradient(circle at 70% 10%, hsla(15, 100%, 47%, var(--star3)) 1.3px, transparent 0),
     radial-gradient(circle at 85% 80%, hsla(113, 100%, 50%, var(--star4)) 1.2px, transparent 0),
-    radial-gradient(ellipse at top left,rgba(255, 183, 211, 0.2),rgba(255, 141, 141, 0.03) 70%),
+    radial-gradient(ellipse at top left,rgba(255, 183, 211, 0.25),rgba(255, 141, 141, 0.04) 70%),
     linear-gradient(180deg, rgb(246, 202, 244),  rgb(230, 218, 212)),
 
 radial-gradient(circle at bottom right,rgb(var(--bg3),.2),transparent 53%),
