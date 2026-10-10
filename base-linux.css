@@ -30,7 +30,6 @@
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%; }}
-
 /* =========================================================
    LINUX TYPE SHIT
    ========================================================= */
@@ -165,6 +164,7 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
   END OF LINUX TYPE SHIT
    ========================================================= */
    
+
 /* ==========================================.............................................
 /* ==========================================.............................................
    ==========================================.............................................
@@ -2263,3 +2263,5 @@ button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1.
     display: block!important;}
 [class*="_contentInner"] {
 	max-width: none !important;}
+   #nowPlaying > header > div._buttons_6ec911e > div._actionButtons_c44ccc7 > button._marketButton_1d16h_1._tertiary_1d16h_8._small_1d16h_3._iconOnly_1d16h_1._iconButton_fe68160._fullscreenButton_109e50d{
+    display: block!Important;}
