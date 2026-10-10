@@ -115,7 +115,7 @@ linear-gradient(180deg, rgba(var(--bg3),1),  rgba(var(--bg3),1))
      radial-gradient(circle at 35% 45%, hsla(326, 100%, 50%, var(--star1)) 1px, transparent 0),
     radial-gradient(circle at 70% 10%, hsla(15, 100%, 47%, var(--star3)) 1.3px, transparent 0),
     radial-gradient(circle at 85% 80%, hsla(113, 100%, 50%, var(--star4)) 1.2px, transparent 0),
-    radial-gradient(ellipse at top left,rgba(255, 79, 146, 0.2),rgba(255, 0, 0, 0.03) 70%),
+    radial-gradient(ellipse at top left,rgba(255, 183, 211, 0.2),rgba(255, 141, 141, 0.03) 70%),
     linear-gradient(180deg, rgb(246, 202, 244),  rgb(230, 218, 212)),
 
 radial-gradient(circle at bottom right,rgb(var(--bg3),.2),transparent 53%),
@@ -146,5 +146,4 @@ background: none!important;}
 /* ==========================================.............................................
    END OF BUILTINTHEME
 -----------------------------------------------======================================== */
-
 
