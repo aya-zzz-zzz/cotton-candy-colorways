@@ -19,7 +19,7 @@
         --cover-F00TBAR1:  50, 0, 49 ; /*footer progress bar color (not now-playing)*/
         --cover-F00TD:     0, 41, 54      ; /*darker version of F00T color*/
         --footcard: rgba(114, 242, 223, 0.46);
-        --footcard2: rgba(80, 255, 229, 0.307);
+        --footcard2: rgba(75, 247, 244, 0.4);
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
         --bhdf:    rgb(160, 237, 240) ;
@@ -146,4 +146,3 @@ background: none!important;}
 /* ==========================================.............................................
    END OF BUILTINTHEME
 -----------------------------------------------======================================== */
-
