@@ -3,7 +3,7 @@
 -----------------------------------------------======================================== */
 /* ===========================----COLOR VARIABLES----================================== */
     :root{
-        --cover-Vib1:      176, 167, 161 ;
+        --cover-Vib1:      162, 153, 147 ;
         --cover-DVib1:     41, 36, 32 ;
         --cover-LVib1:     192, 185, 179;
 
@@ -30,11 +30,11 @@
         --plylstbrt: 1.067;
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(176, 167, 161);
+        --bhdf:    rgb(162, 153, 147);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
-        --cover-S1D3B4R:  color-mix(in srgb, rgb(255, 255, 255) 34% , rgb(var(--cover-Vib1), 1) 66%); /*controls sidebar background-color*/
+        --cover-S1D3B4R:  rgb(210, 203, 198); /*controls sidebar background-color*/
 
 
         --plylstbrdr: rgb(211, 205, 192); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
@@ -110,7 +110,7 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.4) brightness(.95); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.25) brightness(.95); transition: 0ms;}}
 
 /* ==========================================.............................................
    END OF BUILTINTHEME
