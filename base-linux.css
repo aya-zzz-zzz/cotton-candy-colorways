@@ -1,3 +1,4 @@
+
 /* { * *
  "name": "cotton candy",
  "author": "Aya, featuring some modified work by Interstellar_1 (from her Tidal Light theme) and Acercandr0 (from their Lunallena theme)",
@@ -137,6 +138,7 @@ background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 
 #mainHeader:not([data-test="header"]) > * {margin-top: 0em;}/*0em margin-top for linux/browser*/
 /*mini header*/
 ._headerContainer_e0cf17f{transition: 0ms!important;}
+._smallHeader_224566f._showHeader_2434137,
 ._smallHeader_f2c3791,._smallHeader_f2c3791._showHeader_1038dcf,._smallHeader_cb3dc61._showHeader_2b7360a,._smallHeader_cb3dc61,._smallHeader_1c02955._showHeader_4930400,._smallHeader_1c02955{
     transition: 0ms!Important;
     background: rgba(255, 255, 255, 0)!Important;
@@ -146,6 +148,7 @@ background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 
     backdrop-filter: blur(10px);
 ._text_0e64cb5{color: white; }}
 ._smallHeader_f2c3791,._smallHeader_383424b,._smallHeader_cb3dc61{background-color: #0000!important;}
+._smallHeader_224566f._showHeader_2434137,
 ._smallHeader_f2c3791,._smallHeader_f2c3791._showHeader_1038dcf,._smallHeader_cb3dc61._showHeader_2b7360a,._smallHeader_cb3dc61,._smallHeader_1c02955._showHeader_4930400,._smallHeader_1c02955
     {width: calc(100vw - var(--sidebarWidth) - var(--playQueueWidth, 0px) - 1.6vw)!Important;transform: translateX(calc(.8vw + .1px))!important; border-radius: 0em 0em 1.5em 1.5em;  }
 ._smallHeader_383424b._showHeader_6ef2102,._smallHeader_383424b{display: none;}
@@ -163,7 +166,38 @@ transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);}
 /* =========================================================
   END OF LINUX TYPE SHIT
    ========================================================= */
-   
+
+ /* ==========================================.............................................
+   Save for Later
+   -----------------------------------------------======================================== */
+._emptyStateImage_7435b6a{color: rgb(var(--cover-DVib1))}
+[data-track--page-id="mycollection_save_for_later"]{
+._marketText_1lyag_1._text20_1lyag_291{color:rgb(var(--cover-DVib1)) }
+.css-qk2423{        transition: border-color 0s ! Important;
+        border-style: solid;
+        border-width: 2px;
+        color: 
+color-mix(in srgb, rgb(var(--cover-DVib1), 1) 20%, rgb(0, 0, 0) 80%) !important;
+        text-shadow: 0px 0px 6.66px rgb(var(--cover-LVib1), .3);
+        background-color: rgb(var(--cover-Vib1), 1) !important;
+        background-image: linear-gradient(var(--rotate), 
+color-mix(in srgb, rgb(var(--cover-LVib1), .9) 85%, rgba(255, 255, 255, 0.5) 15%), 
+color-mix(in srgb, rgb(var(--cover-LVib1), .85) 75%, rgb(var(--cover-Vib1), .5) 25%), 
+color-mix(in srgb, rgb(var(--cover-LVib1), .5) 45%, rgb(var(--cover-Vib1), .8) 55%), 
+color-mix(in srgb, rgb(var(--cover-Vib1), .9) 60%, rgb(var(--cover-LVib1), .5) 40%));
+        background-size: 130% 130%;
+        animation: rotate-gradient 22s cubic-bezier(.29, .44, .67, .56) infinite;
+        border-color: 
+color-mix(in srgb, rgb(var(--cover-LVib1), 1) 77%, white 23%);
+box-shadow: inset 0px 0px 5em 
+color-mix(in srgb, rgb(var(--cover-LVib1), .4) 32%, rgba(255, 255, 255, .75) 68%), 0px 1.25px .15em 
+color-mix(in srgb, rgb(var(--cover-DVib1), .2) 15%, rgba(0, 0, 0, 0.2) 85%), inset 0px 0px 1.5em 
+color-mix(in srgb, rgb(var(--cover-LVib1), .7) 23%, rgba(255, 255, 255, .7) 77%);}
+.css-lzppjz:hover{background-color: black; color: rgb(var(--cover-LVib1));
+[data-wave-color=textWhite]{color:rgb(var(--cover-LVib1)) }}
+._typeBadge_57b2aff{background: rgb(var(--cover-Vib1));}
+
+}
 
 /* ==========================================.............................................
 /* ==========================================.............................................
@@ -359,6 +393,7 @@ fill: rgb(0, 0, 0)}
     backdrop-filter: blur(6px);
     transition: 10ms;
 ._scrollingIcon_6596d82._icon_77f3f89 > use{fill: color-mix(in srgb, var(--v2) 20%, rgb(0, 0, 0) 80%);}}
+._buttonContainer_a07db07 svg{color: color-mix(in srgb, var(--v2) 20%, rgb(0, 0, 0) 80%);}
 .css-1xlzpjd:hover,.css-8iwxr.tidal-ui__spacer > .css-1xlzpjd.tidal-ui__button:hover{
     background-color: color-mix(in srgb, var(--v2) 40%, rgba(0, 0, 0, 0.25) 60%) ;
     animation: rotate-gradient 2s cubic-bezier(.29,.44,.67,.56) infinite;
@@ -1699,24 +1734,40 @@ box-shadow: 0px 0px 1em #c08dff42;transition: 100ms; }}
 /*lyrics button added-icon color*/
 .sticky-lyrics-trigger{color: rgba(255, 255, 255, 0.901)!important;}
 /*active*/
+
 #nowPlaying > header > div._buttons_6ec911e > div._contentButtons_6b6c8ea > button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._toggleButton_934359e._toggleButtonActive_b595428{
-      svg > path:nth-child(1){fill: rgb(0, 0, 0)!important;transition: 200ms!important;}
+      svg > path:nth-child(4),svg > path:nth-child(1){fill: rgb(0, 0, 0)!important;transition: 200ms!important;}
   svg > path:nth-child(2){fill: rgba(0, 0, 0, 0.85)!important;transition: 200ms!important;}
    svg > path:nth-child(3){fill: rgba(0, 0, 0, 0.9)!important;transition: 200ms!important;}}
 /*inactive hover*/
+
 [data-test=toggle-lyrics]:has(.rl-lyrics-menu-trigger):hover{
- svg > path:nth-child(1){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
+path:nth-child(4){fill: rgb(247, 135, 255)!important;transition: 400ms!important;transition-delay: -25ms; }
   svg > path:nth-child(2){fill: rgb(255, 221, 0)!important;transition: 300ms!important; transition-delay: 25ms;}
    svg > path:nth-child(3){fill: rgb(92, 187, 255)!important;transition: 210ms!important;transition-delay: 65ms;}}
 /*active hover*/
 ._toggleButton_934359e._toggleButtonActive_b595428:hover{
-    svg > path:nth-child(1){fill: rgb(13, 0, 28)!important;transition: 100ms!important;}
+   svg > path:nth-child(4),svg > path:nth-child(1){fill: rgb(13, 0, 28)!important;transition: 100ms!important;}
     svg > path:nth-child(2){fill: rgb(19, 0, 9)!important;transition: 100ms!important;}
     svg > path:nth-child(3){fill: rgb(0, 9, 20)!important;transition: 100ms!important;}}
 [class="_marketButton_1d16h_1 _tertiary_1d16h_8 _small_1d16h_3 _toggleButton_934359e"]{
-        svg > path:nth-child(1){fill: rgb(255, 255, 255)!important;transition: 100ms!important;}
+    svg > path:nth-child(4),svg > path:nth-child(1){fill: rgb(255, 255, 255)!important;transition: 100ms!important;}
     svg > path:nth-child(2){fill: rgb(255, 255, 255)!important;transition: 100ms!important;}
     svg > path:nth-child(3){fill: rgb(255, 255, 255)!important;transition: 100ms!important;}}
+
+body.rl-ai-lyrics [data-test=toggle-lyrics][aria-pressed=true] .rl-lyrics-menu-trigger {
+    --rl-ai-c1: #a5004d!important;
+    --rl-ai-c2: #9a5c06!important;;
+    --rl-ai-c3: #017179!important;;
+    --rl-ai-c4: #230480!important;;
+    --rl-ai-glow: 50%;}
+
+.flush-lyrics-button.rl-retime svg{
+    filter: invert(1)!important;}
+
+.flush-lyrics-button.rl-retime svg.rl-spinner{
+    filter: invert(1)!important;}
+
 
 /*scales down lyrics slightly to fit better in box*/
 [class="rl-wbw-active"]{padding-bottom: 66em!important;}
@@ -1819,7 +1870,8 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     background-image: linear-gradient(120deg, color-mix(in srgb, rgb(var(--cover-DVib1), .1) 20% , rgb(var(--cover-LVib1), .2) 80%), color-mix(in srgb, rgb(var(--cover-DVib1), .4) 30% , rgb(var(--cover-LVib1), .5) 70%));
     animation: rotate-gradient 22s cubic-bezier(.33,.48,.63,.47) infinite;
     box-shadow: inset 0px 0px .85em color-mix(in srgb, rgb(var(--cover-DVib1), .25) 75% , rgba(0, 0, 0, 0.04) 25%)    ,  0px 0px .6em color-mix(in srgb, rgb(var(--cover-LVib1), .3) 70% , rgba(255, 255, 255, 0.2) 30%);
-    border-color: rgb(var(--cover-DVib1), .1) ;
+    border-color: rgb(var(--cover-DVib1), .3) ;
+    background-clip: padding-box;
     backdrop-filter: brightness(1.0) saturate(1.1);}
 ._primary_1l1bl_6:active{border-style: solid;border-width: 2px;}
 ._toggleButton_934359e:hover,._toggleButton_934359e:active{
@@ -1836,6 +1888,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     border-color: color-mix(in srgb, rgb(var(--cover-DMut1), 1) 50% , rgba(0, 0, 0, 1) 50%) ;}
 /*primary (active) buttons*/
 ._toggleButton_934359e._toggleButtonActive_b595428{
+    transition: border-color  0s !Important ;
     border-style: solid;border-width: 2px;
     color: color-mix(in srgb, rgb(var(--cover-DVib1), 1) 20% , rgb(0, 0, 0) 80%)  !important;
     text-shadow: 0px 0px 6.66px rgb(var(--cover-LVib1), .3);
@@ -1851,6 +1904,7 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     box-shadow: inset 0px 0px 5em color-mix(in srgb, rgb(var(--cover-LVib1), .4) 32% , rgba(255, 255, 255, .75) 68%),  0px 1.25px .7em   color-mix(in srgb, rgb(var(--cover-DVib1), .2) 15% , rgba(0, 0, 0, 0.2) 85%)
     ,inset 0px 0px 1.5em color-mix(in srgb, rgb(var(--cover-LVib1), .7) 23% , rgba(255, 255, 255, .7) 77%)
     ,0px 1.25px 1em   color-mix(in srgb, rgb(var(--cover-DMut1), .2) 60% , rgba(0, 0, 0, 0.10) 40%)!important; }
+
   ._toggleButton_934359e._toggleButtonActive_b595428:hover {border-style: solid;border-width: 2px;
     color: #000000 !important;
     text-shadow: 0px 0px 15px rgb(var(--cover-LMut1), .9) ;
@@ -1859,10 +1913,10 @@ background-image: linear-gradient(180deg, #0000, #0000,#0000,rgb(var(--cover-Vib
     ,0px 1.25px 1.1em   color-mix(in srgb, rgb(var(--cover-DMut1), .3) 80% , rgba(0, 0, 0, 0.20) 20%)!important; 
     border-color: color-mix(in srgb, rgb(var(--cover-LVib1), 1) 75%  , rgb(var(--cover-LMut1), 1) 25%);
     background: linear-gradient(170deg,
-        color-mix(in srgb, rgb(var(--cover-DMut1), .3) 60% , rgba(0, 0, 0, 0.3) 40%), color-mix(in srgb, rgb(var(--cover-DMut1), .3) 60% , rgba(0, 0, 0, 0.3) 40%), color-mix(in srgb, rgb(var(--cover-DMut1), .3) 60% , rgba(0, 0, 0, 0.3) 40%), color-mix(in srgb, rgb(var(--cover-DMut1), .3) 60% , rgba(0, 0, 0, 0.3) 40%),
-        color-mix(in srgb, rgb(var(--cover-Vib1), .5) 60% , rgba(0, 0, 0, 0.4) 40%),
+        rgb(var(--cover-Vib1), .5), rgb(var(--cover-Vib1), .5), rgb(var(--cover-Vib1), .5),rgb(var(--cover-Vib1), .5),
+        color-mix(in srgb, rgb(var(--cover-Vib1), .5) 60% , rgba(0, 0, 0, 0.1) 40%),
         rgb(var(--cover-Vib1), .7) , rgb(var(--cover-Vib1), .8), color-mix(in srgb, rgb(var(--cover-Vib1), .9) 85% , rgb(var(--cover-LVib1), .9) 15%) , color-mix(in srgb, rgb(var(--cover-Vib1), 1) 70% , rgb(var(--cover-LVib1), 1) 30%) );
-        background-color: #ffffff!Important;background-size: 340% 340%;animation: buttongradient2 620s cubic-bezier(.24, .48, .67, .56)!IMPORTANT;animation-iteration-count: 1;transition: 300ms;}}
+        background-color: #ffffff!Important;background-size: 340% 340%;animation: buttongradient2 600s cubic-bezier(.24, .48, .67, .56)!IMPORTANT;animation-iteration-count: 1;transition: 300ms;}}
 /*artist card*/
 /*artist card*/
 ._card_2b91b88{
@@ -2268,3 +2322,6 @@ button._marketButton_1l1bl_1._tertiary_1l1bl_8._small_1l1bl_3._iconOnly_1l1bl_1.
 	max-width: none !important;}
    #nowPlaying > header > div._buttons_6ec911e > div._actionButtons_c44ccc7 > button._marketButton_1d16h_1._tertiary_1d16h_8._small_1d16h_3._iconOnly_1d16h_1._iconButton_fe68160._fullscreenButton_109e50d{
     display: block!Important;}
+[class*="_artworkWrapper_"]{
+    padding-bottom: 3px!important;
+}
