@@ -257,7 +257,7 @@ filter: brightness(.4) blur(1em) sepia(1) hue-rotate(var(--sephue)) saturate(4) 
     backdrop-filter: blur(3px) opacity(0);
     min-width: calc(100.2% - (var(--playQueueWidth) * .85));
     max-width: calc(100.2% - (var(--playQueueWidth) * .85)); border-radius: 2em;
-    height: 33em!important;transform: translateY(1em) translate(-50%); top: -3em!important}
+    height: 33em!important;transform: translateY(1em) translate(-50%); top: -3.7em!important}
 
 /*text - colors*/
 ._theme_4041340 [data-wave-color=textSecondary]{color: var(--zz) !important;}
