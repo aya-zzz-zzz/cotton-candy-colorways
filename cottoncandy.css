@@ -10,7 +10,7 @@
         --cover-LVib2:     220, 240, 255 ; /* lighter version of second vibrant color*/
 
         --cover-Mut1:      120, 120, 120 ; /* muted color (these barely show up they're kind of a holdover from when this theme was fully covertheme compatible)*/
-        --cover-DMut1:     16, 0, 32     ; /* darker version of muted color*/
+        --cover-DMut1:     57, 10, 57    ; /* darker version of muted color*/
         --cover-LMut1:     239, 188, 236 ; /* light version of muted color*/
 
         --cover-F00T:      180, 208, 255 ; /*footer color (not now-playing)*/
@@ -18,9 +18,10 @@
         --cover-F00TD:     0, 7, 67      ; /*darker version of F00T color*/
         --footcard: rgba(229, 236, 255, 0.4);
         --footcard2: rgba(255, 230, 252, 0.24);
+        --F00TNP: rgba(252, 229, 255, 0.15);
 
         /*bhdf doesnt do nuthin it's just here to make color picking easier*/
-        --bhdf:    rgb(255, 68, 246);
+        --bhdf:    rgb(57, 10, 57);
 
         --carddelay: -230ms; /*controls delay for the hover animation for the album/playlist cards, what looks "right" weirdly depends on the colors you're using. usually somewhere between -200ms and -300ms*/
 
@@ -28,8 +29,8 @@
 
         --sephue: 267deg; /*controls sidebar album colorization & artist page top picture colorization, adjust to the color you want*/
 
-        --plylstsat: 2.1; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
-        --plylstbrt: 1.1; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
+        --plylstsat: 1.7; /*controls backdrop-saturation for most inner containers, such as the album or playlist tracklist*/
+        --plylstbrt: 1.05; /*controls backdrop-brightness for most inner containers, such as the album or playlist tracklist*/
         --plylstbrdr: color-mix(in srgb, color-mix(in srgb, rgb(var(--cover-Vib1), 1) 66% , rgba(233, 255, 235, 1)  34%)60% , rgb(var(--cover-LVib1),1)  40%); /*controls border-color for most inner containers, such as the album or playlist tracklist*/
 
         --feedsat: 1.85; /*controls backdrop-saturation for home feed inner container*/
@@ -105,7 +106,7 @@ background-color: rgb(var(--cover-Vib1)); }
 background: none!important;}
 
 /*sidebar album filters (remove hue-rotate to disable colorization effect, but i still recommend adding desaturation or lower brightness for the hover to be noticible since i removed the hover background-color)*/
-[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(.4) brightness(.95); transition: 0ms;}}
+[id="sidebar"]{._thumbnail_f82abfa img{filter: sepia(1) hue-rotate(var(--sephue)) saturate(1.5) brightness(.95); transition: 0ms;}}
 
 /* ==========================================.............................................
    END OF BUILTINTHEME
